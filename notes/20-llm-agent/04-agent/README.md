@@ -59,3 +59,12 @@
 - [ ] 多步任务/文件操作权限
 - [ ] 沙箱与停止条件
 - [ ] 可重复Benchmark
+
+
+## 9. Agent 长任务恢复 / Coding Agent（本轮补漏）
+
+- [ ] LangGraph/Workflow checkpoint、恢复状态和业务侧持久化。
+- [ ] 外部 API 成功但保存状态失败的幂等、重试和补偿。
+- [ ] Context engineering：Write/Select/Compress/Isolate；摘要不是完整恢复凭据。
+- [ ] Coding Agent 的工具契约、执行沙箱、代码测试、权限与 trace。
+- [Meko1 · 耐久 Agent 工作流](https://github.com/Meko1/llm-interview-guide/blob/main/docs/agent/durable-agent-workflows.md) · [Coding Agent 内部机制](https://github.com/Meko1/llm-interview-guide/blob/main/docs/engineering/coding-agent-internals.md)

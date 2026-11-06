@@ -52,3 +52,10 @@
 - [先修依赖审计](40-prerequisite-audit.md)
 - [端到端工程审计](41-engineering-audit.md)
 - [面试题型覆盖审计](42-interview-coverage.md)
+
+
+## 第三轮目录对照与官方实现
+
+- [五套资料结构级复核报告](43-reference-gap-audit.md)：九卷具身题库（第九卷为前沿非面经）、Datawhale、LLM Course、Meko1、Agents Course。
+- [LeRobot Action Representation](https://huggingface.co/docs/lerobot/action_representations)；[LeRobot RTC](https://huggingface.co/docs/lerobot/rtc)。
+- [RTC 原始论文](https://arxiv.org/abs/2506.07339)；[Isaac Lab Controllers](https://docs.nvidia.com/isaaclab/concepts/controllers)。

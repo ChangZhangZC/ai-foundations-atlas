@@ -45,3 +45,10 @@
 - [ ] 统计trainable params
 - [ ] SFT labels mask测试
 - [ ] 微调前后模型对比
+
+
+## 7. 训练数据与参数合并（P1 补充）
+
+- [ ] 合成数据/蒸馏数据的质量控制、模型污染/数据泄漏。
+- [ ] LoRA adapter merge、多个 adapter/权重合并概念及能力干扰。
+- [Meko1 Synthetic Data](https://github.com/Meko1/llm-interview-guide/blob/main/docs/finetuning/synthetic-data.md) · [Model Merging](https://github.com/Meko1/llm-interview-guide/blob/main/docs/finetuning/model-merging.md)

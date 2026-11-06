@@ -45,3 +45,13 @@
 - [ ] chunk控制/RTC
 - [ ] 跨任务泛化/OOD
 - [ ] 评估与安全边界
+
+
+## 7. π0/π0.5 的 RTC 与动作表示
+
+- [ ] Flow Head 输出 Chunk `[T,A]` 与执行控制器的 Action Contract
+- [ ] RTC guided/trained，实际延迟与 checkpoint 条件
+- [ ] Joint 与 EE 表示、Relative 与 Delta Action、归一化
+- [RTC 主笔记](../08-deployment/real-time-chunking.md)
+- [Joint/EE 主笔记](../03-control/joint-vs-ee-control.md)
+

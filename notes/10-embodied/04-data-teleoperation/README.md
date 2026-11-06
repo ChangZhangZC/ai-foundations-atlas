@@ -38,3 +38,11 @@
 - [ ] 增强与原数据比例
 - [ ] 覆盖/长尾/失败样本
 - [ ] 数据集版本与回放检验
+
+
+## 6. 动作空间数据契约（本轮补漏）
+
+- [ ] Joint 与 EE 数据集不能只按 action_dim 比较，要写明单位、frame、动作参考点。
+- [ ] Relative-to-current 和 per-step Delta 的参考点不同，回放前必须按原协议反变换。
+- [Joint/EE 详解](../03-control/joint-vs-ee-control.md)
+

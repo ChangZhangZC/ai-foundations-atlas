@@ -141,6 +141,15 @@
 - [ ] 控制安全与异常拦截
 - [ ] 双臂协调与实时性
 
+#### E03.06 Joint vs EE 动作表示与实际控制
+
+- [ ] [Joint / End-Effector (EE) 控制主笔记](../notes/10-embodied/03-control/joint-vs-ee-control.md)
+- [ ] Absolute / Relative-to-observation / sequential Delta action 区别和转换
+- [ ] FK/IK 可达性、多解与奇异性；数值 IK、Jacobian、坐标系
+- [ ] 位置/速度/力矩 vs Joint/Task Space 的两种不同分类
+- [ ] 轨迹时间参数化、速度/加速度/jerk 限制和闭环跟踪
+- [ ] 控制接口、动作单元/索引、数据归一化和实机安全约束
+
 ### E04 · 示教数据与 LeRobot 工程（P0）
 [模块入口](../notes/10-embodied/04-data-teleoperation/README.md)
 
@@ -345,6 +354,16 @@
 - [ ] 日志/回放
 - [ ] 识别感知、策略、控制责任
 
+#### E08.06 Real-Time Chunking（RTC）与异步策略执行
+
+- [ ] [RTC 完整主笔记](../notes/10-embodied/08-deployment/real-time-chunking.md)
+- [ ] 推理和执行的异步时间线、动作缓存、observed latency
+- [ ] Guided prefix / action inpainting 与 Temporal Ensembling 对照
+- [ ] inference_delay、execution_horizon、max_guidance_weight、prefix_attention_schedule
+- [ ] LeRobot guided/trained mode 的配置和 checkpoint 兼容性
+- [ ] Late Chunk、stale observation、deadline miss 与安全 fallback
+- [ ] [Joint/EE + RTC 最小模拟练习](../practice/robot-control/README.md)
+
 ### E09 · 策略评测与项目实验（P0）
 [模块入口](../notes/10-embodied/09-evaluation/README.md)
 
@@ -496,3 +515,10 @@
 | LeRobot | [LeRobot Dataset](https://huggingface.co/docs/lerobot/lerobot-dataset-v3) | features/shape/dtype/fps/stats/episode 和 video 对齐 |
 
 [共同基础](00-shared.md) · [大模型与Agent](20-llm-agent.md) · [实践与面试](30-practice-interview.md)
+
+## v0.3 · 五知识库对照新增链接
+
+- [五套外部资料覆盖审计](43-reference-gap-audit.md) 重点确认 RTC、Joint/EE、控制和 VLA 推理执行缺口。
+- [E03 Joint/EE 主笔记](../notes/10-embodied/03-control/joint-vs-ee-control.md) / [E08 RTC 主笔记](../notes/10-embodied/08-deployment/real-time-chunking.md)。
+- 标准术语是 End-Effector（EE）；EF 一般不作为此处的规范缩写。
+- `E13 ROS Rate` 解释节点循环调度；`E08 RTC` 解释动作 Chunk 的异步生成与连续性约束，两者不可互换。

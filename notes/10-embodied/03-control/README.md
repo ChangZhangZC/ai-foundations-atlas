@@ -46,3 +46,16 @@
 - [ROS Rate：循环目标频率不等于实际控制频率](../13-ros-runtime/ros-rate.md)
 
 控制律的理论周期、ROS 发布循环周期和实际驱动器的控制周期是不同层级，实机必须分别测量。
+
+
+## 6. Joint / EE Action Representation 与轨迹控制（本轮补漏）
+
+- [Joint vs End-Effector Space 主笔记](joint-vs-ee-control.md)
+- [ ] Absolute / Relative / Delta Actions 及其参考点
+- [ ] Joint position/velocity/torque vs Task-space pose/twist/wrench
+- [ ] URDF + FK/IK/数值解与可达性/奇异性、关节限位
+- [ ] EE orientation：Euler / axis-angle / quaternion、xyzw/wxyz
+- [ ] time-parameterized trajectory：位置、速度、加速度、jerk
+- [ ] 控制器阻抗/导纳/轨迹跟踪的输入输出契约
+- [离线实践](../../../practice/robot-control/README.md)
+

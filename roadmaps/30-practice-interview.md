@@ -75,3 +75,15 @@
 - [知识依赖审计](40-prerequisite-audit.md)
 - [工程全流程覆盖审计](41-engineering-audit.md)
 - [题库与面试题型覆盖](42-interview-coverage.md)
+
+
+## P09 · RTC 与 Joint/EE 控制专项
+
+- [ ] 动作表示：绝对/相对当前状态/逐步 Delta，检查时间与参考点。
+- [ ] Joint/EE 运动学：FK→IK→FK roundtrip、单位/坐标/关节顺序。
+- [ ] 轨迹控制：目标位置/速度/力矩、插值与控制周期，区分模型 Hz 和伺服 Hz。
+- [ ] RTC：设定推理延迟、动作 buffer、前缀约束、迟到 Chunk 故障注入。
+- [ ] 对比 ROS Rate、Temporal Ensembling、异步推理与 RTC 的职责。
+- [离线实验入口](../practice/robot-control/README.md)。
+
+[第三轮：五套外部知识库比较与缺口清单](43-reference-gap-audit.md)

@@ -1,6 +1,6 @@
 # v0.2 · 笔试面试题型与课程覆盖审计
 
-> 范围：参考公开具身题库 **八卷的目录及代表题目**、LLM 面试指南的主要章节、Datawhale 课程结构和常见算法/机考题型。**不是逐题审完全部题目**，也不能据此推断企业正式笔试题的概率。每个题型映射到稳定模块，后续做题记录在 practice/。
+> 范围：参考公开具身题库 **前八卷的目录及代表题目**、LLM 面试指南的主要章节、Datawhale 课程结构和常见算法/机考题型。**不是逐题审完全部题目**，也不能据此推断企业正式笔试题的概率。每个题型映射到稳定模块，后续做题记录在 practice/。
 
 ## 具身智能：八卷与地图对照
 
@@ -65,12 +65,20 @@
 
 ## 覆盖结论与限制
 
-- [x] 具身题库 **八个主题卷** 的结构级映射；典型题已挂模块。
+- [x] 具身题库 **前八个面经主题卷** 的结构级映射；典型题已挂模块。
 - [x] LLM 指南主要知识类别结构级映射；另列跨领域典型题型。
 - [x] ROS Rate/Timer/Time/Queue 盲区识别并建立 E13。
-- [ ] 逐题校验八卷所有题目和 LLM 全站题目（本轮未完成，不声称完整逐题）。
+- [ ] 逐题校验前八卷所有题目和 LLM 全站题目（本轮未完成，不声称完整逐题）。
 - [ ] 对照具体招聘 JD 和新发布的牛客笔试卷逐题建立可追溯矩阵；目前没有公司真实全套题的可验证覆盖率。
 
 参考：[具身题库目录](https://winstonjq.github.io/embodied-interview-qa/) · [LLM 面试指南](https://github.com/Meko1/llm-interview-guide) · [Datawhale](https://github.com/datawhalechina/dive-into-embodied-ai)
 
 返回：[依赖审计](40-prerequisite-audit.md) · [工程审计](41-engineering-audit.md) · [实践检查](30-practice-interview.md)
+
+## v0.3 题库目录更正与新增考点
+
+- WinstonJQ 当前仓库还有[第九卷前沿拓展](https://github.com/WinstonJQ/embodied-interview-qa/blob/master/docs/interviews/09_frontier.md)。**该卷明确标为非面经前沿题**，不能统计为企业实际高频笔试面试题；原报告主要覆盖前八卷。
+- [E08 RTC](../notes/10-embodied/08-deployment/real-time-chunking.md)：推理/执行异步、前缀 inpainting、Chunk 切换时延与连续性。
+- [E03 Joint/EE](../notes/10-embodied/03-control/joint-vs-ee-control.md)：Absolute/Relative/Delta、FK/IK、关节/任务空间、控制类型。
+- L04 长任务 Agent 恢复、L07 LLM-as-a-Judge 顺序偏差和校准：进入下一批综合系统设计题。
+- [五个知识库的第二轮对照报告](43-reference-gap-audit.md)。

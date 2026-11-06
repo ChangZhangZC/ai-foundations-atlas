@@ -47,3 +47,15 @@
 - [ROS 实验](../../../practice/ros/README.md)
 
 部署验证必须区分模型推理 Hz、消息发布 Hz、订阅接收 Hz 和底层控制 Hz，并记录 header.stamp、队列时延和超时处理。
+
+
+## 6. RTC、连续执行与 Chunk 接缝（本轮补漏）
+
+- [RTC 主笔记](real-time-chunking.md)
+- [ ] 异步推理线程与动作执行队列的时序
+- [ ] prefix-guided inpainting / overlap，Temporal Ensembling 对比
+- [ ] inference_delay/execution_horizon 的定义和实测
+- [ ] 迟到 Chunk/旧观测/断续动作的处置与 watchdog
+- [ ] Joint/EE 目标与控制端位置/速度/力矩接口的匹配
+- [控制与 RTC 离线练习](../../../practice/robot-control/README.md)
+

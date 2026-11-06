@@ -52,3 +52,12 @@
 - [ ] [B,T,A]检查
 - [ ] scheduler实验
 - [ ] 配置→Policy→Runner追踪
+
+
+## 8. Flow Policy 连续执行与 RTC（本轮补漏）
+
+- [ ] Flow Matching 迭代动作生成与推理延迟的关系
+- [ ] plain Chunk、Temporal Ensembling、RTC 的实现区别
+- [ ] RTC guided prefix inpainting、异步推理与 inference_delay
+- [RTC 主笔记](../08-deployment/real-time-chunking.md)
+

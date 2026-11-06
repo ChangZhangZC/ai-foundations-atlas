@@ -211,6 +211,13 @@
 - [ ] 沙箱与停止条件
 - [ ] 可重复Benchmark
 
+#### L04.09 长任务 Agent 的耐久执行与上下文恢复
+
+- [ ] 运行状态持久化、Checkpoint/Resume、节点/工具幂等
+- [ ] 外部副作用成功但状态未持久化时的补偿与回放
+- [ ] Context compaction、摘要版本、检索和恢复验证
+- [ ] Coding Agent 沙箱/代码检验/工具契约与权限边界
+
 ### L05 · NLP、Tokenizer 与语言建模（P0）
 [模块入口](../notes/20-llm-agent/05-nlp-tokenization/README.md)
 
@@ -330,6 +337,12 @@
 - [ ] 回归/灰度/A-B
 - [ ] drift/observability
 - [ ] 人工抽样审核
+
+#### L07.06 LLM-as-a-Judge 校准
+
+- [ ] Judge 与人工金标准的一致性、准确性与偏差的区别
+- [ ] 选项/答案顺序偏差、position swap、评估合同
+- [ ] 评分抽样、混淆矩阵、Kappa/置信区间、校准与拒判
 
 ### L08 · LLM 部署与训练系统（P1）
 [模块入口](../notes/20-llm-agent/08-systems/README.md)
@@ -468,3 +481,11 @@
 - 先阅读 [跨主线知识依赖审计](40-prerequisite-audit.md)；L05 Tokenizer/语言建模 → L01 Decoder-only → L03 KV Cache，不能跳过 mask 与 Tensor shape。
 - [LLM/Agent 面试题型矩阵](42-interview-coverage.md)：将 SFT、LoRA、推理、RAG、Agent 工具调用与评估映射到课程。
 - [工程全链路对照](41-engineering-audit.md)：共同 GPU/精度/数据训练能力复用 F 系列。
+
+
+## v0.3 · 五仓库比较新增 P0/P1 检查点
+
+- [L04 持久 Agent 执行与 Context Compaction](../notes/20-llm-agent/04-agent/README.md)（P0/P1）。
+- [L07 LLM-as-a-Judge 校准](../notes/20-llm-agent/07-evaluation/README.md)（P0）。
+- [L06 GraphRAG](../notes/20-llm-agent/06-rag/README.md) 与 [L02 合成数据/模型合并](../notes/20-llm-agent/02-training/README.md)（P1）。
+- [五套外部知识库审计报告](43-reference-gap-audit.md)。

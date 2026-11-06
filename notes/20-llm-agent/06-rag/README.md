@@ -44,3 +44,11 @@
 - [ ] 构建小规模本地知识检索
 - [ ] RAG检索与生成分开评测
 - [ ] 负例和拒答测试
+
+
+## 7. 图检索与多跳（P1 补充）
+
+- [ ] GraphRAG 的图构建、实体关系、检索路径。
+- [ ] 何时传统 BM25/Dense Hybrid 足够，何时才需要 GraphRAG。
+- [ ] 多跳推理失败的定位与检索层评价。
+- [Meko1 GraphRAG](https://github.com/Meko1/llm-interview-guide/blob/main/docs/rag/graphrag.md)

@@ -4,7 +4,7 @@
 
 以算法笔试/面试和实际工程能力为目标，把零散的概念、数学、代码、模型配置、工程实验和项目案例整理成可维护的 Markdown 知识网络。
 
-**当前状态：v0.2 结构与覆盖审计（2026-11-06）**。初版 F12/E12/L11 共 35 模块、688 条候选条目；本次新增 **E13 ROS 时间/执行模块**及 33 条待学检查项，合计 36 模块。条目数不是独立笔记数，也不代表掌握程度。结构级审计已完成，逐题源码级审阅仍需继续。
+**当前状态：v0.3 五套知识库交叉审计（2026-11-06）**。初版 F12/E12/L11 共 35 模块、688 条候选条目；本次新增 **E13 ROS 时间/执行模块**及 33 条待学检查项，合计 36 模块。条目数不是独立笔记数，也不代表掌握程度。结构级审计已完成，逐题源码级审阅仍需继续。
 
 ## 课程入口
 
@@ -88,3 +88,11 @@ templates/               原子知识点模板
 - 最明显的新 P0 缺口是 ROS1/ROS2 时间与执行机制；新增 [E13](notes/10-embodied/13-ros-runtime/README.md)、[ROS Rate 知识笔记](notes/10-embodied/13-ros-runtime/ros-rate.md) 和 [实验入口](practice/ros/README.md)。
 - [依赖图](roadmaps/40-prerequisite-audit.md) 明确核心先修链；[工程审计](roadmaps/41-engineering-audit.md) 从数据、配置、训练、GPU 到部署逐环节核查；[题型矩阵](roadmaps/42-interview-coverage.md) 把公开题库的主题与模块建立映射。
 - 本轮仅完成结构/代表题型审计，尚不声称审完所有单题；已补真实 Rate 笔记，其余概念在学习中按需建档。
+
+
+## v0.3 外部知识库再次核查
+
+- [第三轮对照报告](roadmaps/43-reference-gap-audit.md)：复核五套课程/面试题库目录及重点章节，确认 P0 重点缺口但不额外增加一级模块。
+- 新增 [Joint vs End-Effector (EE)](notes/10-embodied/03-control/joint-vs-ee-control.md) 和 [RTC Real-Time Chunking](notes/10-embodied/08-deployment/real-time-chunking.md) 两篇原子笔记及 [离线实践清单](practice/robot-control/README.md)。
+- 细化 E03/E05/E06/E08 动作与推理，以及 L04 长任务恢复、L07 Judge 校准；原有 **36 个一级模块保持不变**。
+- 公开具身题库当前有九卷，其中第九卷是独立的前沿非面经拓展，不能将全部九卷统称为真实面试题。
