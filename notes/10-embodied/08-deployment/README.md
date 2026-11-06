@@ -38,3 +38,12 @@
 - [ ] Checkpoint/normalize一致
 - [ ] 日志/回放
 - [ ] 识别感知、策略、控制责任
+
+
+## ROS 运行时及延迟专项
+
+- [E13 · ROS 节点、Rate、Timer、spin 与队列](../13-ros-runtime/README.md)
+- [ROS Rate 原子笔记](../13-ros-runtime/ros-rate.md)
+- [ROS 实验](../../../practice/ros/README.md)
+
+部署验证必须区分模型推理 Hz、消息发布 Hz、订阅接收 Hz 和底层控制 Hz，并记录 header.stamp、队列时延和超时处理。

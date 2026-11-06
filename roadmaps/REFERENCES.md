@@ -36,3 +36,19 @@
 ## 质量约束
 
 任何新知识点应能回答：属于哪条主线？前置是什么？与谁相关？需要何种练习？信息来源是什么？怎样判断已掌握？
+
+
+## v0.2 补充的 ROS 官方资料与接口
+
+- [ROS Wiki 镜像：rospy Time/Rate](https://rsync.osuosl.org/pub/ros/ros_wiki_mirror/rospy%282f%29Overview%282f%29Time.html)
+- [ROS Wiki 镜像：roscpp Rate/WallRate](https://rsync.osuosl.org/pub/ros/ros_wiki_mirror/roscpp%282f%29Overview%282f%29Time.html)
+- [ROS Wiki 镜像：roscpp Timers](https://rsync.osuosl.org/pub/ros/ros_wiki_mirror/roscpp%282f%29Overview%282f%29Timers.html)
+- [ROS Wiki 镜像：rostopic hz/bw/delay](https://rsync.osuosl.org/pub/ros/ros_wiki_mirror/rostopic.html)
+
+注意：公开题库可能存在版本差异或不精确概括，主笔记以官方 API/可验证实现为依据。
+
+## v0.2 已产出的覆盖报告
+
+- [先修依赖审计](40-prerequisite-audit.md)
+- [端到端工程审计](41-engineering-audit.md)
+- [面试题型覆盖审计](42-interview-coverage.md)

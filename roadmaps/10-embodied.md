@@ -1,6 +1,6 @@
 # E · 具身智能三级知识地图
 
- > v0.1 草案。按机器人数据流组织：传感器/数据→模型表征→动作策略→执行控制→评测。P0优先，P1拓展，P2暂缓。知识地图的勾选均为待学，不等于完成。
+ > v0.2（2026-11-06）。按机器人数据流组织：传感器/数据→模型表征→动作策略→执行控制→评测。P0优先，P1拓展，P2暂缓。知识地图的勾选均为待学，不等于完成。
 
 ## 模块导航
 
@@ -21,7 +21,9 @@
 
 ## 推荐顺序
 
-共享先修 F02/F03/F04/F07/F08/F09 → E01 感知、E04 数据 → E02 ACT、E05 DP/Flow → E06 VLA → E03 控制、E08 部署、E09 评估。E07/E10/E11按项目选学；E12强化学习暂缓。
+共享先修 F02/F03/F04/F07/F08/F09 → E01 感知、E04 数据 → E02 ACT、E05 DP/Flow → E06 VLA → E03 控制、E08 部署、E09 评估。E07/E10/E11按项目选学；**E13 ROS 时间与节点运行 P0，应在 E08 之前补齐**；E12强化学习暂缓。
+
+| E13 | ROS 通信、节点执行与时间 | P0 | [README](../notes/10-embodied/13-ros-runtime/README.md) |
 
 ## 三级知识清单
 
@@ -459,6 +461,30 @@
 - [ ] RLHF/GRPO与具身RL关联
 - [ ] Sim2Real RL
 - [ ] 复杂长程任务
+
+### E13 · ROS 通信、节点执行与时间（P0）
+[模块入口](../notes/10-embodied/13-ros-runtime/README.md) · [第一篇笔记：ROS Rate](../notes/10-embodied/13-ros-runtime/ros-rate.md)
+
+#### E13.01 节点与消息
+- [ ] Master/Node/Topic/Publisher/Subscriber、Header/消息类型、ROS 环境
+- [ ] Service/Action/参数服务器/launch/remap
+- [ ] TF/TF2、URDF、JointState、控制消息与坐标系
+
+#### E13.02 时间、循环与调度
+- [ ] ROS Rate/Timer/WallRate、Hz、period、超时和实际频率
+- [ ] rospy.spin、ros::spinOnce、Callback Queue 与线程
+- [ ] ROS Time、/use_sim_time、/clock、时间回跳
+- [ ] header.stamp、数据年龄、latency/jitter/deadline
+
+#### E13.03 传输与控制接口
+- [ ] queue_size、积压/丢帧、TCPROS 与延迟
+- [ ] 摄像头/模型/控制器不同频率下的缓冲和 watchdog
+- [ ] ROS2 Executor/Callback Group、DDS QoS 对照
+
+#### E13.04 工具与实践
+- [ ] rostopic hz/bw/delay、rosnode/rosparam/rosbag
+- [ ] 10 Hz ROS1 Rate 实验与慢处理失速验证
+- [ ] ROS 网络、调度与机器人控制接口系统设计
 
 ## 模型源码与配置核查
 

@@ -38,3 +38,12 @@
 - [ ] 数据集/commit/config 版本
 - [ ] NaN/zero grad
 - [ ] 训练慢/OOM/输入分布变化
+
+
+## 本轮工程审计增补
+
+- [ ] DataLoader 的 num_workers/prefetch/pin_memory/persistent_workers 对吞吐与内存的影响。
+- [ ] 将 CPU 数据处理、GPU 前向/反向与 IO 等待区分开，基于 profiler 实测。
+- [ ] config/shape/dtype/FPS/normalization 和 checkpoint 版本的关联校验。
+
+详见 [工程覆盖审计](../../../roadmaps/41-engineering-audit.md)。

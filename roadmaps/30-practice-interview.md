@@ -60,3 +60,18 @@
 - [LeetCode](https://leetcode.cn/) · [牛客](https://www.nowcoder.com/)
 
 [F共同基础](00-shared.md) · [E具身](10-embodied.md) · [L大模型](20-llm-agent.md)
+
+
+## P08 · ROS1/ROS2 运行时、时间与实机频率
+
+- [ ] [ROS Rate 练习](../practice/ros/README.md)：10 Hz 循环下比较 30 ms 和 150 ms 负载的实测频率。
+- [ ] rostopic hz/bw/delay 区分消息到达率、网络负载与带 Header 的时间延迟。
+- [ ] 回答 Rate / Timer / spin / spinOnce / ROS2 Executor 的关系；排查慢回调/队列积压。
+- [ ] /use_sim_time、/clock、rosbag --clock、仿真冻结/回跳对循环的影响。
+- [ ] 在假定不同感知/推理/控制频率的系统中说明缓存、动作有效期及安全超时。
+
+## 三次审计结果入口
+
+- [知识依赖审计](40-prerequisite-audit.md)
+- [工程全流程覆盖审计](41-engineering-audit.md)
+- [题库与面试题型覆盖](42-interview-coverage.md)

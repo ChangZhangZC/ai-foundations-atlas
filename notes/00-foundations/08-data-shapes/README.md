@@ -38,3 +38,10 @@
 - [ ] Parquet/MP4/HDF5/Zarr/NPY
 - [ ] 数据版本与元数据
 - [ ] IO/解码瓶颈
+
+
+## 与机器人时间系统连接
+
+- [E13 · ROS 运行时与模拟时钟](../../10-embodied/13-ros-runtime/README.md)
+
+训练离线数据的 FPS 不等于实机 topic 的到达频率；多模态数据要在统一时钟/时间戳下对齐并追踪 data age。

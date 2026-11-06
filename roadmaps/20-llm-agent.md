@@ -462,3 +462,9 @@
 - [Meko1 LLM Interview Guide](https://github.com/Meko1/llm-interview-guide)——知识盲区检查和高频追问，不替代理论课。
 
 [共同基础](00-shared.md) · [具身](10-embodied.md) · [实践与面试](30-practice-interview.md)
+
+## v0.2 · 依赖与面试覆盖复核
+
+- 先阅读 [跨主线知识依赖审计](40-prerequisite-audit.md)；L05 Tokenizer/语言建模 → L01 Decoder-only → L03 KV Cache，不能跳过 mask 与 Tensor shape。
+- [LLM/Agent 面试题型矩阵](42-interview-coverage.md)：将 SFT、LoRA、推理、RAG、Agent 工具调用与评估映射到课程。
+- [工程全链路对照](41-engineering-audit.md)：共同 GPU/精度/数据训练能力复用 F 系列。

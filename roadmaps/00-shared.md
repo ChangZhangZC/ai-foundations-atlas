@@ -481,3 +481,11 @@
 - [ ] 切片与越界
 - [ ] 边界数据
 - [ ] Python 标准库方法
+
+
+## v0.2 · 必经先修和新发现的共性缺口
+
+- [依赖关系审计与验收门槛](40-prerequisite-audit.md)
+- [数据/训练/部署端到端工程审计](41-engineering-audit.md)
+- F08 的时序概念与 E13 的 ROS Rate/Clock 互为应用关系；F09 补充 DataLoader 和性能诊断。
+- [具身 E13 · ROS 通信与时间](../notes/10-embodied/13-ros-runtime/README.md)
