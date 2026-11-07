@@ -1,40 +1,9 @@
 # F07 · 视觉架构与生成建模
 
-**优先级**：P0；此处为阅读导航，未生成空白知识点正文。
+**课程定位**：CNN/ViT 视觉编码、VAE/CVAE、U-Net、Diffusion 和 Flow Matching 的基础原理及数据形状。
 
-[返回共同基础知识地图](../../../roadmaps/00-shared.md)
+[查看 F 共享基础课程地图](../../../roadmaps/00-shared.md) · [学习进度](../../../progress/FOUNDATIONS.md) · [自测题型](../../../practice/CHECKLIST.md)
 
-## 1. 视觉特征
+## 知识点笔记
 
-- [ ] 卷积/stride/padding/感受野
-- [ ] ResNet/特征金字塔
-- [ ] ViT/patch
-- [ ] CLIP/DINO
-
-## 2. 编码与解码
-
-- [ ] Encoder/Decoder
-- [ ] U-Net/skip
-- [ ] 1D/2D U-Net
-- [ ] CNN-Transformer 混合结构
-
-## 3. 变分生成
-
-- [ ] AE/VAE/CVAE
-- [ ] 重参数化
-- [ ] ELBO/KL
-- [ ] 先验与潜变量
-
-## 4. 扩散模型
-
-- [ ] DDPM/DDIM
-- [ ] epsilon/x0/v prediction
-- [ ] Score Matching
-- [ ] noise schedule
-
-## 5. 流模型
-
-- [ ] Flow Matching/Rectified Flow
-- [ ] 速度场/ODE
-- [ ] 条件化/时间编码
-- [ ] 生成采样质量与延迟
+本模块的独立知识点笔记将在课程核验后逐篇建立；此处只索引已实际存在的笔记，完整待学清单统一以课程地图为准。内容已收录不等于个人学习通过。
