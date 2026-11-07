@@ -3,8 +3,6 @@ id: F04-001
 title: 知识点名称
 track: shared
 priority: P0
-level: L0
-status: todo
 tags: []
 ---
 
