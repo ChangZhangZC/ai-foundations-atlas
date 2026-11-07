@@ -9,7 +9,7 @@
 | 项目介绍与目录入口 | [README.md](README.md) |
 | 课程覆盖、模块、先修关系 | [roadmaps/](roadmaps/00-shared.md)，包括 E / L 地图 |
 | 知识点主笔记、模块索引 | `notes/`（F / E / L，概念主笔记只保留一份） |
-| 实践代码与可复现实验 | `practice/` |
+| 轻量自测题型与可选代码/实验 | `practice/` |
 | 课程状态、测验摘要、能力等级 | [F 进度](progress/FOUNDATIONS.md) · [E 进度](progress/EMBODIED.md) · [L 进度](progress/LLM_AGENT.md) |
 | ChatGPT 项目配置与交接入口 | `projects/` |
 | 新建笔记格式 | `templates/` |
@@ -54,6 +54,7 @@
 ## 5. 笔记、来源与工程证据
 
 - 使用英文小写加连字符命名文件；新笔记优先采用 `templates/concept.md`，用 GitHub 可解析的 Markdown 相对链接连接现有概念，必要时双向链接。
+- 每节课可讲 1–3 个概念，但每个足够独立的概念只创建一份主笔记；若同一课部分概念尚未验证，只为已确认的知识点归档，不把整课一并判为通过。
 - 一份知识主笔记可以被不同方向引用，不复制正文；笔记已收录、已经教学、本课已验证、L3 掌握是**不同事实**。知识笔记不存储个人 `level` 或课程 `status`。
 - 工程数据需明确 shape、dtype、单位、FPS、时间戳、归一化与接口；模型训练/性能说明 Batch、GPU、精度、版本、warmup/同步与评测口径。
 - ACT、Diffusion Policy、openpi、Kuavo 等实现细节与参数应核对特定来源，区分论文、源码、工程经验、真实测量与教学推断。
