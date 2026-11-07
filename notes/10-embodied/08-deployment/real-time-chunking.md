@@ -3,8 +3,6 @@ id: E08-001
 title: Real-Time Chunking (RTC)
 track: embodied
 priority: P0
-level: L0
-status: todo
 tags: [rtc, flow-matching, action-chunking, asynchronous-inference]
 ---
 
