@@ -3,8 +3,6 @@ id: E03-001
 title: Joint Space 与 End-Effector Space 控制
 track: embodied
 priority: P0
-level: L0
-status: todo
 tags: [robotics, kinematics, joint-space, end-effector, control]
 ---
 
