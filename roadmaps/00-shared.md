@@ -1,6 +1,6 @@
 # F · 共同基础三级知识地图
 
-> v0.1 草案（2026-11-06）。共享基础只存一份；知识地图是覆盖清单，不代表已学习。P0 重点、P1 扩展。勾选项暂时均未完成。
+此地图定义 F01–F12 的知识范围与先修关系。P0 为优先学习，P1 为扩展；清单不是学习完成记录。课程验证以 [F 进度](../progress/FOUNDATIONS.md) 为准。
 
 ## 模块导航
 
@@ -21,9 +21,11 @@
 
 ## 推荐顺序与跨路线复用
 
-起点：F01 Python、F05 数学、F06 经典机器学习 → F02 PyTorch、F03 深度学习 → F04 Transformer、F07 视觉与生成 → F08 数据形状、F09 训练、F10 GPU（工程模块同步学习）→ F11/F12 按需。实际学习可随项目或笔试反向跳转。
+**主线**：F01 Python 源码阅读 → F02 Tensor / Autograd / Module → F03 网络、Loss、Optimizer → F08 数据、时序与 Batch → F04 Attention / Transformer 与 F07 视觉、生成 → F09/F10 训练、精度与 GPU 性能。F05 数学按需穿插，F06 经典 ML、F11 工具、F12 笔试随课程或岗位需求穿插。
 
-关联：[具身智能](10-embodied.md) · [LLM / Agent](20-llm-agent.md) · [实践面试](30-practice-interview.md)
+每课围绕 1–3 个关联概念，以讲解、短代码阅读及 2–4 道轻量题检验；不要求每个概念手写完整模型。前期接触过的 PyTorch 知识先复核，再决定是否压缩铺垫。
+
+关联：[具身智能](10-embodied.md) · [LLM / Agent](20-llm-agent.md) · [实践面试](../practice/CHECKLIST.md)
 
 ## 三级知识清单
 
@@ -124,7 +126,8 @@
 #### F03.02 Loss
 
 - [ ] MSE/MAE/Huber
-- [ ] CE/BCE/LogSoftmax
+- [ ] CE/BCE/LogSoftmax 与 logits、label 的 shape
+- [ ] loss reduction（mean/sum）、padding/ignore index、masked loss
 - [ ] KL/熵/标签平滑
 - [ ] Focal Loss/类别不均衡
 
@@ -182,11 +185,11 @@
 - [ ] 长上下文
 - [ ] KV Cache
 
-#### F04.05 手撕
+#### F04.05 代码阅读与形状分析
 
-- [ ] Self Attention 与 mask
-- [ ] Cross Attention 输入 shape
-- [ ] Transformer Block
+- [ ] 阅读 Self Attention 与 mask 的核心实现、预测输出
+- [ ] Cross Attention Q/K/V 与 mask 的 Tensor shape
+- [ ] 阅读 Transformer Block 并解释残差、规范化与参数
 - [ ] ACT/ViT/LLM 用法差异
 
 ### F05 · 数学与数值计算（P0）
@@ -307,7 +310,7 @@
 
 - [ ] B/T/V/C/H/W/D 约定
 - [ ] CHW/HWC 转换
-- [ ] [B,T,D]/[B,V,C,H,W]
+- [ ] [B,T,D]/[B,V,C,H,W]/[B,T,V,C,H,W] 以及带时间轴与多相机轴的转换
 - [ ] mask/padding/shape assert
 
 #### F08.02 多模态
@@ -360,6 +363,7 @@
 
 - [ ] 单 Batch 过拟合
 - [ ] loss/梯度/激活检查
+- [ ] DataLoader num_workers、pin_memory、prefetch、persistent_workers 与 CPU/IO/GPU 数据瓶颈
 - [ ] 日志/WandB
 - [ ] val/early stopping
 
@@ -484,11 +488,3 @@
 - [ ] 切片与越界
 - [ ] 边界数据
 - [ ] Python 标准库方法
-
-
-## v0.2 · 必经先修和新发现的共性缺口
-
-- [依赖关系审计与验收门槛](40-prerequisite-audit.md)
-- [数据/训练/部署端到端工程审计](41-engineering-audit.md)
-- F08 的时序概念与 E13 的 ROS Rate/Clock 互为应用关系；F09 补充 DataLoader 和性能诊断。
-- [具身 E13 · ROS 通信与时间](../notes/10-embodied/13-ros-runtime/README.md)
