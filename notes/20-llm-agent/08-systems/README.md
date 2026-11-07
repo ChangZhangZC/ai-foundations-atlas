@@ -1,40 +1,9 @@
 # L08 · LLM 部署与训练系统
 
-优先级：P1。本模块先记录清单，不提前生成空白知识点文件。
+**课程定位**：LLM 服务化、batching、分布式训练、缓存、延迟、容量和系统可靠性。工程资源有限时按需扩展。
 
-[返回LLM/Agent知识地图](../../../roadmaps/20-llm-agent.md)
+[查看 LLM / Agent 课程地图](../../../roadmaps/20-llm-agent.md) · [学习进度](../../../progress/LLM_AGENT.md) · [自测题型](../../../practice/CHECKLIST.md)
 
-## 1. 推理服务
+## 知识点笔记
 
-- [ ] 服务协议/Streaming/SSE
-- [ ] 异步请求/队列
-- [ ] 模型加载/热启动
-- [ ] 多实例/负载均衡
-
-## 2. 规模与优化
-
-- [ ] Dynamic/continuous batching
-- [ ] 上下文与显存预算
-- [ ] KV Cache管理
-- [ ] 吞吐/响应延迟平衡
-
-## 3. 分布式训练
-
-- [ ] DDP/FSDP/ZeRO
-- [ ] Tensor/Pipeline/Expert Parallel
-- [ ] NCCL/NVLink/网络瓶颈
-- [ ] 混合精度和checkpoint
-
-## 4. 可靠性
-
-- [ ] 版本/灰度/回滚
-- [ ] 日志/Tracing
-- [ ] 限流/超时/重试
-- [ ] 模型与提示词管理
-
-## 5. 容量规划
-
-- [ ] GPU显存估算
-- [ ] Roofline和kernel profile
-- [ ] 压测P50/P95/P99
-- [ ] 缓存和成本
+本模块的独立知识点主笔记将随课程验证逐篇建立；本页只负责模块导论与已存在知识点的索引，不复制完整的课程清单。概念已收录不代表个人已掌握。
