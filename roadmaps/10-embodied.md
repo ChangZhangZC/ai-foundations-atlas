@@ -18,12 +18,19 @@
 | E10 | 三维感知、导航与规划 | P1 | [README](../notes/10-embodied/10-3d-navigation/README.md) |
 | E11 | 灵巧手、触觉与双臂协作 | P1 | [README](../notes/10-embodied/11-dexterous-tactile/README.md) |
 | E12 | 强化学习、世界模型（暂缓） | P2 | [README](../notes/10-embodied/12-rl-deferred/README.md) |
+| E13 | ROS 通信、节点执行与时间 | P0 | [README](../notes/10-embodied/13-ros-runtime/README.md) |
 
 ## 推荐顺序
 
-共享先修 F02/F03/F04/F07/F08/F09 → E01 感知、E04 数据 → E02 ACT、E05 DP/Flow → E06 VLA → E03 控制、E08 部署、E09 评估。E07/E10/E11按项目选学；**E13 ROS 时间与节点运行 P0，应在 E08 之前补齐**；E12强化学习暂缓。
+基于旧 PyTorch→VLA 教材的有效先修链，按下列**教学阶段**循序推进；一级模块是知识归属，不等于一节课，实际每课 1–3 个关联知识点。
 
-| E13 | ROS 通信、节点执行与时间 | P0 | [README](../notes/10-embodied/13-ros-runtime/README.md) |
+1. **代码阅读底座**：F01/F02 的 Python 关键写法、Tensor/Shape、Autograd、Module；对曾学内容先做轻量复核，再补 F03 的 Loss/优化、F08/F09/F10 的数据、训练与 GPU。
+2. **模型表达**：F04/F07 的 CNN/ViT、Attention/Transformer、视觉 token、训练结构；经 E01 进入机器人多视角视觉。
+3. **机器人数据桥梁**：E04 重点学习 **LeRobotDataset → Dataset 时间窗口 → Normalization → Policy 配置接口**，与 rosbag/Kuavo 数据契约对照。
+4. **策略原理与源码**：E02 ACT/模仿学习 → E05 Diffusion Policy/Flow Matching → E06 VLA/动作建模；逐个沿“配置 → 输入 → forward/loss → action chunk”追踪。
+5. **机器人运行闭环**：E13 ROS 时间与消息 → E03 Joint/EE 控制 → E08 同步/异步/RTC 部署 → E09 评估、时延和失败归因。
+
+E07/E10/E11 按实际场景拓展；E12 系统强化学习暂缓。每课 **2–4 道客观小测**，每累计五节通过验证的正式课程做综合复习。能力以源码/shape 理解为主，不把大段代码编写设为默认通过条件。
 
 ## 三级知识清单
 
@@ -99,6 +106,7 @@
 #### E02.05 实现对照
 
 - [ ] 原版ACT与LeRobot ACT配置差异
+- [ ] LeRobot PolicyFeature、preprocessor/postprocessor 与 ACT chunk 队列的接口（E04 已讲通用机制，此处只讲 ACT 差异）
 - [ ] shape与mask
 - [ ] 训练时latent与推理时latent
 - [ ] 模型失败归因
@@ -187,6 +195,25 @@
 - [ ] 增强与原数据比例
 - [ ] 覆盖/长尾/失败样本
 - [ ] 数据集版本与回放检验
+
+#### E04.06 LeRobotDataset 内部结构与版本（P0）
+
+- [ ] Dataset v2.1 与 v3.0 的 episode-per-file / 多 episode 文件存储差别；按实际安装版本核对。
+- [ ] `meta/info.json`、`meta/stats.json`、episode/task 元数据、Parquet 与多相机 MP4 的职责；区分物理存储和 `LeRobotDataset[i]` 的逻辑样本。
+- [ ] `observation.state`、`action`、`observation.images.*`、`timestamp` 等典型键，schema→样本→DataLoader batch 的 shape、dtype、单位；键名以数据集实际 features 为准。
+- [ ] `delta_timestamps` 及时间窗口、视频时间索引、episode 边界和 padding，FPS/时间戳与动作序列同步。
+- [ ] 归一化统计量的来源、训练与部署一致性；数据集转换/迁移时检验 episode、视频、元数据不丢失。
+
+#### E04.07 LeRobot 框架全链路（P0）
+
+- [ ] `lerobot-record` → 数据集校验/可视化 → `lerobot-train` → 策略评估/rollout，理解 CLI 参数如何进入代码。
+- [ ] `PolicyFeature` / `input_features` / `output_features`、配置对象和数据集特征的契约与校验。
+- [ ] Policy 的训练 `forward`/loss 与推理 `select_action`、`predict_action_chunk`；区分模型输出 action chunk 与实际执行的 `n_action_steps`。
+- [ ] 训练/部署 preprocess、normalization、postprocess、action queue、checkpoint 与 policy config 的连接；涉及插件/自定义机器人时验证适配边界。
+- [ ] 将 ROS bag / Kuavo 多相机与 joint/hand state/action 映射到 LeRobot schema；检查相机 key/order、时间同步、动作单位、关节顺序、训练/实机一致性。
+- [ ] 同步推理、异步/远端推理、RTC 与实机控制时钟的职责（详见 E08/E13）。
+
+**版本与官方入口**：[LeRobotDataset v3](https://huggingface.co/docs/lerobot/lerobot-dataset-v3) · [Policy API](https://huggingface.co/docs/lerobot/main/en/api/policies) · [自定义 Policy](https://huggingface.co/docs/lerobot/bring_your_own_policies) · [部署/rollout](https://huggingface.co/docs/lerobot/main/inference)。这些文档的 API 会更新，授课时以所读源码的 tag/commit 为准。
 
 ### E05 · Diffusion Policy、Flow Matching（P0）
 [模块入口](../notes/10-embodied/05-generative-policy/README.md)
