@@ -1,65 +1,58 @@
 # AI Foundations Atlas
 
-**具身智能 · LLM / Agent · 共同基础知识图谱**
+面向 **AI 算法学习、技术面试与工程实践** 的 Markdown 知识库，覆盖共享基础、具身智能与 LLM / Agent 三条主线。
 
-面向 AI 算法笔试面试和实际工程，采用 **Markdown 原子笔记 + 模块导航 + 跨知识点链接 + 实践验证**。两个 ChatGPT 学习项目共享同一个 GitHub 仓库，不复制共同基础知识。
+知识以原子笔记组织，通过课程地图、模块索引和标准 Markdown 相对链接连接；配套代码实验与学习验证记录。GitHub `main` 是知识库的权威版本。
 
-## 从这里开始
+## 学习路线
 
-| 路线 | 入口 | 内容 |
-|---|---|---|
-| F · 共同基础 | [三级知识地图](roadmaps/00-shared.md) | Python、PyTorch、深度学习、数学、Attention、训练与 GPU |
-| E · 具身智能 | [三级知识地图](roadmaps/10-embodied.md) | 感知、ACT、DP/Flow、VLA、Joint/EE、RTC、ROS 与实机部署 |
-| L · LLM / Agent | [三级知识地图](roadmaps/20-llm-agent.md) | Tokenizer、Transformer、LoRA、KV Cache、RAG、Agent 与评估 |
-| P · 实践与面试 | [实验/题型检查表](roadmaps/30-practice-interview.md) | Python 手撕、Tensor shape、模型参数、显存、控制与排错 |
+| 方向 | 课程地图 | 主要内容 | 学习进度 |
+| --- | --- | --- | --- |
+| **F · Foundations** | [共享基础](roadmaps/00-shared.md) | Python、数学、PyTorch、深度学习、Transformer、训练与 GPU | [F 进度](progress/FOUNDATIONS.md) |
+| **E · Embodied AI** | [具身智能](roadmaps/10-embodied.md) | 机器人感知、模仿学习、ACT、Diffusion / Flow、VLA、控制与部署 | [E 进度](progress/EMBODIED.md) |
+| **L · LLM & Agent** | [大模型与 Agent](roadmaps/20-llm-agent.md) | NLP、语言模型、微调、推理、RAG、Agent 与评估 | [L 进度](progress/LLM_AGENT.md) |
 
-[**笔试真题归档**](exam-papers/README.md)：按校招届别保存个人整理的企业笔试复盘；参考答案不等于官方答案，也不自动构成课程验证。
+三条路线共享同一个知识库。F 系列笔记仅维护一份，E 与 L 按需引用，不复制共同基础内容。
 
-**当前状态**：课程地图 **v0.3 稳定基线**，共 **36 个一级模块**（F12 / E13 / L11）。课程覆盖地图已建立，**正式教学尚未开始**；不把大纲勾选或已有项目经验视为知识已掌握。
-
-- [STATUS.md](STATUS.md)：基线提交、完成/待办状态、笔记与学习进度。
-- [LEARNING_RULES.md](LEARNING_RULES.md)：教学方式、笔记粒度、学习级别与 GitHub 提交规范。
-- [项目设置说明](projects/README.md)：两套可直接用于 ChatGPT 项目设置的 Instructions。
-- [参考来源与审计](roadmaps/REFERENCES.md)：外部课程、模型源码及覆盖检查。
-
-## 如何学习并留档？
-
-1. **选章节**：从对应地图和模块 `README.md` 找到知识点，检查先修关系。
-2. **聊天精讲**：概念直觉 → 机制/数学 → shape 或代码 → 常见误区 → 项目/面试联系；重要编程题先尝试再讲解。
-3. **实践检查**：根据主题做小实验、阅读模型源码或回答一组题；不必每篇笔记都包含大量代码。
-4. **精简归档**：完成课程后将核实的核心知识整理成一篇简洁笔记（通常 300–800 字），加入相关 Markdown 相对链接。
-5. **更新进度**：学习进度分开记在 [具身路线](progress/EMBODIED.md) 和 [LLM/Agent 路线](progress/LLM_AGENT.md)。**未经学习验证，不勾选知识地图中的任务。**
-
-## 仓库结构
+## 仓库目录
 
 ```text
-roadmaps/                 三条知识地图、实践地图、课程覆盖审计
-notes/
-  00-foundations/         F01–F12 · 双路线共享基础
-  10-embodied/            E01–E13 · 具身智能
-  20-llm-agent/           L01–L11 · LLM / Agent
-practice/                 代码与实验
-exam-papers/              按校招届别归档的笔试题目与复盘
-applications/             应用与项目案例
-progress/                 两条路线各自的学习进度
-projects/                 ChatGPT 项目说明与共同上下文
-templates/                知识点笔记模板
-assets/                   图片和附件
+ai-foundations-atlas/
+├── roadmaps/             课程地图、先修关系、覆盖与审计
+├── notes/                按 F / E / L 归类的知识点主笔记和模块索引
+│   ├── 00-foundations/   F01–F12：共享基础
+│   ├── 10-embodied/      E01–E13：具身智能
+│   └── 20-llm-agent/     L01–L11：LLM / Agent
+├── practice/             代码练习、可复现实验与调试材料
+├── exam-papers/          笔试真题整理与复盘
+├── applications/         面向具体任务的应用与项目案例
+├── progress/             F / E / L 三条路线的学习与验证记录
+├── projects/             ChatGPT 项目配置与跨项目协作入口
+├── templates/            Markdown 内容模板
+├── assets/               图片及非代码附件
+├── LEARNING_RULES.md     教学、笔记、验证与归档规则
+└── README.md             仓库入口
 ```
 
-模块编号表示**知识归属**，不强制规定课时顺序。原子笔记只保留一份主文件，通过标准 Markdown 相对链接兼容 GitHub 与 Obsidian。
+## 使用方式
 
-## 已收录的示范笔记
+1. 从上方课程地图选择模块，并进入对应的 `notes/` 模块索引。
+2. 学习概念、公式、Tensor shape、代码及工程联系；需要时参考 [实践与面试清单](roadmaps/30-practice-interview.md)。
+3. 通过练习或实验验证后，将精简知识点归档到 `notes/`，相关完整实现放入 `practice/`。
+4. 在所属方向的 `progress/` 文件记录课程状态、验证证据与下一步。**笔记存在不代表已经学会，课程清单不作为个人掌握度记录。**
 
-- [ROS Rate 与循环频率](notes/10-embodied/13-ros-runtime/ros-rate.md)
-- [Joint Space 与 End-Effector Space](notes/10-embodied/03-control/joint-vs-ee-control.md)
-- [RTC · Real-Time Chunking](notes/10-embodied/08-deployment/real-time-chunking.md)
+详细标准以 [LEARNING_RULES.md](LEARNING_RULES.md) 为准。三条路线的历史学习记录分别保存在各自的进度文件中。
 
-这些笔记已建档，**不等于已经通过学习测试**。
+## 其他入口
 
-## 稳定基线与版本
+- [笔试题目归档](exam-papers/README.md)
+- [实践与面试检查清单](roadmaps/30-practice-interview.md)
+- [参考课程与资料](roadmaps/REFERENCES.md)
+- [ChatGPT 项目配置](projects/README.md)
 
-- **v0.3 基线提交**：[`effbdcf`](https://github.com/ChangZhangZC/ai-foundations-atlas/commit/effbdcf79ab7ad3a843b6065467ae682fda970ec)（2026-11-06）。
-- 后续课程、笔记、状态管理的提交在 `main` 上正常迭代；基线 Git commit 保留可供对照。
-- [审计：先修依赖](roadmaps/40-prerequisite-audit.md) · [工程链路](roadmaps/41-engineering-audit.md) · [面试覆盖](roadmaps/42-interview-coverage.md) · [五库对照](roadmaps/43-reference-gap-audit.md)。
-- 参考题库完成的是**目录与代表性内容的结构级对照**，不是逐题源码验证；强化学习系统课程暂缓。
+## 内容原则
+
+- **一个概念，一份主笔记**：优先链接既有知识点，避免跨方向复制。
+- **事实与验证分开**：区分教材/论文或源码事实、工程经验、实验测量和推断。
+- **可追溯、可复现**：代码、配置、版本、数据条件与评测口径应足以支持结论。
+- **保护信息**：不提交凭据、隐私、受保密约束的代码或未经授权的材料。
