@@ -1,40 +1,9 @@
 # L05 · NLP、Tokenizer 与语言建模
 
-优先级：P0。本模块先记录清单，不提前生成空白知识点文件。
+**课程定位**：语言建模概率、分词算法、词表与特殊 token、Embedding、teacher forcing 与 next-token loss。
 
-[返回LLM/Agent知识地图](../../../roadmaps/20-llm-agent.md)
+[查看 LLM / Agent 课程地图](../../../roadmaps/20-llm-agent.md) · [学习进度](../../../progress/LLM_AGENT.md) · [自测题型](../../../practice/CHECKLIST.md)
 
-## 1. 经典NLP
+## 知识点笔记
 
-- [ ] N-gram/Word2Vec
-- [ ] RNN/LSTM
-- [ ] Seq2Seq/Encoder-Decoder
-- [ ] 语言建模概率
-
-## 2. 分词
-
-- [ ] BPE/WordPiece/SentencePiece
-- [ ] 特殊token/BOS/EOS/PAD
-- [ ] 中文和英文tokenization
-- [ ] Tokenizer词表规模
-
-## 3. 文本表示
-
-- [ ] Embedding空间
-- [ ] 余弦相似度
-- [ ] 上下文相关表示
-- [ ] 文本分类与生成
-
-## 4. 训练目标
-
-- [ ] MLE/Teacher Forcing
-- [ ] cross entropy/PPL
-- [ ] causal prediction
-- [ ] 温度采样和重复问题
-
-## 5. 代码
-
-- [ ] toy BPE
-- [ ] token长度估算
-- [ ] logits→概率→采样
-- [ ] mask验证
+本模块的独立知识点主笔记将随课程验证逐篇建立；本页只负责模块导论与已存在知识点的索引，不复制完整的课程清单。概念已收录不代表个人已掌握。
