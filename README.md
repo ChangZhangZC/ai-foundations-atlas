@@ -18,18 +18,19 @@
 
 ```text
 ai-foundations-atlas/
-├── roadmaps/             课程地图、先修关系、覆盖与审计
+├── roadmaps/             F / E / L 课程地图与先修关系
 ├── notes/                按 F / E / L 归类的知识点主笔记和模块索引
 │   ├── 00-foundations/   F01–F12：共享基础
 │   ├── 10-embodied/      E01–E13：具身智能
 │   └── 20-llm-agent/     L01–L11：LLM / Agent
-├── practice/             代码练习、可复现实验与调试材料
+├── practice/             轻量自测题型与可选代码实验
 ├── exam-papers/          笔试真题整理与复盘
 ├── applications/         面向具体任务的应用与项目案例
 ├── progress/             F / E / L 三条路线的学习与验证记录
 ├── projects/             ChatGPT 项目配置与跨项目协作入口
 ├── templates/            Markdown 内容模板
 ├── assets/               图片及非代码附件
+├── REFERENCES.md        官方教材与源码资料
 ├── LEARNING_RULES.md     教学、笔记、验证与归档规则
 └── README.md             仓库入口
 ```
