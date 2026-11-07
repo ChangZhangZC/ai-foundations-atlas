@@ -1,40 +1,9 @@
 # L01 · LLM 核心架构
 
-优先级：P0。本模块先记录清单，不提前生成空白知识点文件。
+**课程定位**：从 token IDs 到 embeddings、Decoder-only Transformer、causal attention、logits 和自回归生成；重点理解数据形状与模型参数。
 
-[返回LLM/Agent知识地图](../../../roadmaps/20-llm-agent.md)
+[查看 LLM / Agent 课程地图](../../../roadmaps/20-llm-agent.md) · [学习进度](../../../progress/LLM_AGENT.md) · [自测题型](../../../practice/CHECKLIST.md)
 
-## 1. 文本进入模型
+## 知识点笔记
 
-- [ ] Token ID/vocab
-- [ ] token embedding
-- [ ] position embedding/RoPE
-- [ ] padding与causal mask
-
-## 2. Transformer主干
-
-- [ ] Decoder-only
-- [ ] MHA/MQA/GQA/MLA
-- [ ] FFN/SwiGLU
-- [ ] Residual/RMSNorm/PreNorm
-
-## 3. 主要架构
-
-- [ ] GPT/LLaMA/Qwen模型组成
-- [ ] MoE/Router/Expert
-- [ ] 参数量/层数/head数
-- [ ] 长上下文position scaling
-
-## 4. 训练与生成
-
-- [ ] next-token prediction
-- [ ] logits/softmax
-- [ ] greedy/top-k/top-p/temperature
-- [ ] EOS/stop/chat template
-
-## 5. 从零实现
-
-- [ ] 手写causal self-attention
-- [ ] Transformer Block
-- [ ] toy autoregressive decode
-- [ ] 每层tensor shape和复杂度
+本模块的独立知识点主笔记将随课程验证逐篇建立；本页只负责模块导论与已存在知识点的索引，不复制完整的课程清单。概念已收录不代表个人已掌握。
