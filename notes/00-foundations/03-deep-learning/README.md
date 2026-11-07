@@ -1,41 +1,9 @@
 # F03 · 深度学习原理
 
-**优先级**：P0；此处为阅读导航，未生成空白知识点正文。
+**课程定位**：神经网络、反向传播、损失函数、优化器、正则化与泛化评估。能解释训练循环的因果关系和常见失败。
 
-[返回共同基础知识地图](../../../roadmaps/00-shared.md)
+[查看 F 共享基础课程地图](../../../roadmaps/00-shared.md) · [学习进度](../../../progress/FOUNDATIONS.md) · [自测题型](../../../practice/CHECKLIST.md)
 
-## 1. 网络机制
+## 知识点笔记
 
-- [ ] MLP/激活函数
-- [ ] 链式法则/反向传播
-- [ ] 初始化/梯度消失/爆炸
-- [ ] 残差/skip connection
-
-## 2. Loss
-
-- [ ] MSE/MAE/Huber
-- [ ] CE/BCE/LogSoftmax
-- [ ] KL/熵/标签平滑
-- [ ] Focal Loss/类别不均衡
-
-## 3. 优化
-
-- [ ] SGD/Momentum/Adam/AdamW
-- [ ] warmup/cosine
-- [ ] batch size/梯度噪声
-- [ ] EMA/weight decay/gradient clipping
-
-## 4. 正则化与泛化
-
-- [ ] 过拟合/欠拟合
-- [ ] 正则化/Dropout
-- [ ] BatchNorm/LayerNorm/GroupNorm/RMSNorm
-- [ ] PreNorm/PostNorm
-- [ ] 早停/增强
-
-## 5. 评估
-
-- [ ] Precision/Recall/F1/AUC
-- [ ] 混淆矩阵/PR/ROC
-- [ ] 数据泄漏/分布漂移
-- [ ] 消融/多seed/置信区间
+本模块的独立知识点笔记将在课程核验后逐篇建立；此处只索引已实际存在的笔记，完整待学清单统一以课程地图为准。内容已收录不等于个人学习通过。
