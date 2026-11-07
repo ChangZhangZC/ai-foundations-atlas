@@ -1,47 +1,9 @@
 # L03 · 推理算法、KV Cache 与性能
 
-优先级：P0。本模块先记录清单，不提前生成空白知识点文件。
+**课程定位**：Prefill/Decode、KV Cache、位置编码与推理批处理、显存预算、量化和吞吐延迟指标。
 
-[返回LLM/Agent知识地图](../../../roadmaps/20-llm-agent.md)
+[查看 LLM / Agent 课程地图](../../../roadmaps/20-llm-agent.md) · [学习进度](../../../progress/LLM_AGENT.md) · [自测题型](../../../practice/CHECKLIST.md)
 
-## 1. 生成过程
+## 知识点笔记
 
-- [ ] Prefill/Decode
-- [ ] 自回归逐token
-- [ ] KV Cache K/V张量
-- [ ] 序列长度、上下文与batch
-
-## 2. 缓存
-
-- [ ] KV memory计算
-- [ ] PagedAttention
-- [ ] prefix cache与复用
-- [ ] GQA/MLA对KV体积影响
-
-## 3. 优化
-
-- [ ] FlashAttention
-- [ ] Continuous batching
-- [ ] speculative decoding
-- [ ] chunked prefill/调度
-
-## 4. 精度
-
-- [ ] FP16/BF16/FP8/INT8/INT4
-- [ ] AWQ/GPTQ/SmoothQuant
-- [ ] 权重量化 vs KV量化
-- [ ] 质量和误差验证
-
-## 5. 性能指标
-
-- [ ] TTFT/TPOT/ITL
-- [ ] tokens/s、throughput、goodput
-- [ ] 并发和尾延迟
-- [ ] compute-bound vs memory-bound
-
-## 6. 框架与实验
-
-- [ ] vLLM/SGLang基本原理
-- [ ] CUDA Graph/torch.compile
-- [ ] 比较有无KV Cache
-- [ ] warmup/同步基准测试
+本模块的独立知识点主笔记将随课程验证逐篇建立；本页只负责模块导论与已存在知识点的索引，不复制完整的课程清单。概念已收录不代表个人已掌握。
