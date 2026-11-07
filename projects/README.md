@@ -7,7 +7,7 @@
 | 具身智能 · 基础与工程 | [EMBODIED_PROJECT_INSTRUCTIONS.md](EMBODIED_PROJECT_INSTRUCTIONS.md) | [具身进度](../progress/EMBODIED.md) |
 | LLM / Agent · 从零到算法岗 | [LLM_AGENT_PROJECT_INSTRUCTIONS.md](LLM_AGENT_PROJECT_INSTRUCTIONS.md) | [LLM 进度](../progress/LLM_AGENT.md) |
 
-共同前提：[SHARED_CONTEXT.md](SHARED_CONTEXT.md) 与 [LEARNING_RULES.md](../LEARNING_RULES.md)。
+共同前提：[SHARED_CONTEXT.md](SHARED_CONTEXT.md) 与 [LEARNING_RULES.md](../LEARNING_RULES.md)。两条项目共享同一份 [F 学习进度](../progress/FOUNDATIONS.md)，并分别记录 E、L 专项学习情况。
 
 ## 配置方法
 
