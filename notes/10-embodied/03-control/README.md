@@ -1,61 +1,12 @@
 # E03 · 运动学与机器人控制
 
-优先级：P0。本模块先记录清单，不提前生成空白知识点文件。
+**课程定位**：机器人坐标、关节与末端空间、FK/IK/Jacobian、动力学与控制接口。重点辨析 action 表示、单位、关节顺序、安全约束与执行频率。
 
-[返回具身知识地图](../../../roadmaps/10-embodied.md)
+[查看 E 具身课程地图](../../../roadmaps/10-embodied.md) · [学习进度](../../../progress/EMBODIED.md) · [自测题型](../../../practice/CHECKLIST.md)
 
-## 1. 空间与表示
+## 知识点与关联入口
 
-- [ ] Joint Space vs End-Effector(EE) Space
-- [ ] Joint position/velocity/torque
-- [ ] SE(3)/齐次变换/四元数
-- [ ] Base/World/TCP坐标系
+- [Joint / EE 控制与动作表示](joint-vs-ee-control.md)
+- [Joint/EE 与 RTC 可选实践](../../../practice/robot-control/README.md)
 
-## 2. 运动学
-
-- [ ] FK/IK/Jacobian
-- [ ] DH/URDF/运动链
-- [ ] 冗余度/奇异性
-- [ ] 关节限位与碰撞
-
-## 3. 动力学与控制
-
-- [ ] 刚体动力学/惯量/接触
-- [ ] PID/PD
-- [ ] 阻抗/导纳控制
-- [ ] LQR/MPC/WBC概览
-
-## 4. 动作接口
-
-- [ ] 绝对位置 vs 增量动作
-- [ ] 关节/EE目标映射
-- [ ] 平滑/插值/限速
-- [ ] 频率、延迟、反馈闭环
-
-## 5. 系统
-
-- [ ] ROS topic/action/service/tf
-- [ ] 关节映射与单位
-- [ ] 控制安全与异常拦截
-- [ ] 双臂协调与实时性
-
-
-## 相关运行时知识
-
-- [E13 · ROS 通信与控制周期](../13-ros-runtime/README.md)
-- [ROS Rate：循环目标频率不等于实际控制频率](../13-ros-runtime/ros-rate.md)
-
-控制律的理论周期、ROS 发布循环周期和实际驱动器的控制周期是不同层级，实机必须分别测量。
-
-
-## 6. Joint / EE Action Representation 与轨迹控制（本轮补漏）
-
-- [Joint vs End-Effector Space 主笔记](joint-vs-ee-control.md)
-- [ ] Absolute / Relative / Delta Actions 及其参考点
-- [ ] Joint position/velocity/torque vs Task-space pose/twist/wrench
-- [ ] URDF + FK/IK/数值解与可达性/奇异性、关节限位
-- [ ] EE orientation：Euler / axis-angle / quaternion、xyzw/wxyz
-- [ ] time-parameterized trajectory：位置、速度、加速度、jerk
-- [ ] 控制器阻抗/导纳/轨迹跟踪的输入输出契约
-- [离线实践](../../../practice/robot-control/README.md)
-
+课程地图负责完整知识清单；本页只用于模块导论和现有知识链接。已有主笔记不代表已经通过学习验证。
