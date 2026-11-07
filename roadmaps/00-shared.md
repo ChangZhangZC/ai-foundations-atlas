@@ -42,6 +42,8 @@
 #### F01.02 结构与模块
 
 - [ ] 面向对象/dataclass/typing
+- [ ] `__init__`/`super()`/`__call__`、`*args/**kwargs`、keyword-only 与模型构造
+- [ ] 配置对象、工厂函数、registry、`@property` 的源码阅读（以识别职责为主）
 - [ ] 模块/import/包/路径
 - [ ] 迭代器/生成器/装饰器
 - [ ] 异常/上下文管理
@@ -75,6 +77,7 @@
 #### F02.01 Tensor
 
 - [ ] shape/axis/stride/dtype/device
+- [ ] Shape Ledger：每个轴的含义、张量来源/去向、dtype/device/单位
 - [ ] reshape/view/permute/contiguous
 - [ ] stack/cat/broadcast/einsum
 - [ ] CPU/GPU 转换
@@ -330,7 +333,7 @@
 
 #### F08.05 格式
 
-- [ ] LeRobot info/stats/episodes
+- [ ] LeRobotDataset 基础结构、features/stats/episodes 与视频/表格对应（框架细节见 E04）
 - [ ] Parquet/MP4/HDF5/Zarr/NPY
 - [ ] 数据版本与元数据
 - [ ] IO/解码瓶颈
