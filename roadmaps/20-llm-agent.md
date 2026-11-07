@@ -1,6 +1,5 @@
 # L · LLM / Agent 三级知识地图
-
- > v0.1 草案。以零基础进入 LLM 与 Agent 算法岗位为目标。P0核心、P1扩展、P2暂缓；清单默认待学习。
+从 Tokenizer 与自回归语言建模逐步进入 LLM 与 Agent；P0 为重点，P1 为扩展，P2 暂缓。此清单用于知识覆盖，个人学习进度以 [L 进度](../progress/LLM_AGENT.md) 为准。
 
 ## 模块导航
 
@@ -20,7 +19,9 @@
 
 ## 零基础推荐路径
 
-从 F01 Python / F02 PyTorch / F03 DL / F04 Transformer 先修入手，先读 L05 NLP → L01 LLM 结构 → L02 训练与 L03 推理 → L06 RAG → L04 Agent → L07评估。L08-10按岗位选学；L11仅保留概念入口。
+先复用 F01/F02/F03/F04 的 Python、PyTorch、神经网络和 Attention → L05 Tokenizer/语言建模 → L01 Decoder-only/自回归 → L02 SFT/LoRA 与 L03 KV Cache/推理 → L04 Tool Calling/Agent → L06 RAG → L07 评估。L04 与 L06 可以根据应用场景前后交错，不互为强制先修；L08–L10 按工程需求拓展，L11 系统强化学习暂缓。
+
+课堂以核心代码阅读、mask/shape/参数推导和轻量选择/判断题为主，具体规则见 [LEARNING_RULES](../LEARNING_RULES.md)。
 
 ## 三级知识清单
 
@@ -55,11 +56,11 @@
 - [ ] greedy/top-k/top-p/temperature
 - [ ] EOS/stop/chat template
 
-#### L01.05 从零实现
+#### L01.05 核心代码阅读
 
-- [ ] 手写causal self-attention
-- [ ] Transformer Block
-- [ ] toy autoregressive decode
+- [ ] 阅读 causal self-attention 并推导 QKV/mask shape
+- [ ] 阅读 Transformer Block
+- [ ] 跟踪 toy autoregressive decode 的序列与 KV shape
 - [ ] 每层tensor shape和复杂度
 
 ### L02 · LLM 预训练与微调（P0）
@@ -102,10 +103,15 @@
 
 #### L02.06 代码实践
 
-- [ ] 手撕低秩线性层
+- [ ] 阅读低秩线性层，计算权重 shape 与 trainable params
 - [ ] 统计trainable params
-- [ ] SFT labels mask测试
+- [ ] SFT labels / assistant-only loss mask 的代码判断
 - [ ] 微调前后模型对比
+
+#### L02.07 数据质量与模型适配（P1）
+
+- [ ] 合成/蒸馏数据的质量、污染与数据泄漏
+- [ ] LoRA adapter merge 和多 adapter 权重合并的能力干扰
 
 ### L03 · 推理算法、KV Cache 与性能（P0）
 [模块入口](../notes/20-llm-agent/03-inference/README.md)
@@ -251,7 +257,7 @@
 
 #### L05.05 代码
 
-- [ ] toy BPE
+- [ ] 根据短代码追踪 BPE merge 与 token ID
 - [ ] token长度估算
 - [ ] logits→概率→采样
 - [ ] mask验证
@@ -299,6 +305,11 @@
 - [ ] 构建小规模本地知识检索
 - [ ] RAG检索与生成分开评测
 - [ ] 负例和拒答测试
+
+#### L06.07 图检索与多跳（P1）
+
+- [ ] GraphRAG 的实体、关系、建图与多跳检索，判断何时简单混合检索已经足够
+- [ ] 多跳检索的失败归因与独立检索评测
 
 ### L07 · 大模型与 Agent 评估（P0）
 [模块入口](../notes/20-llm-agent/07-evaluation/README.md)
@@ -467,25 +478,3 @@
 - [ ] 训练稳定性和奖励黑客
 - [ ] 机制可解释性SAE
 - [ ] 前沿技术持续更新
-
-## 课程与面试资料
-
-- [Maxime Labonne LLM Course](https://github.com/mlabonne/llm-course)——架构、训练、推理、Engineer/Scientist两条进阶方向。
-- [Hugging Face Agents Course](https://huggingface.co/learn/agents-course/unit0/introduction)——工具、Action/Observation、框架和Agent项目。
-- [Meko1 LLM Interview Guide](https://github.com/Meko1/llm-interview-guide)——知识盲区检查和高频追问，不替代理论课。
-
-[共同基础](00-shared.md) · [具身](10-embodied.md) · [实践与面试](30-practice-interview.md)
-
-## v0.2 · 依赖与面试覆盖复核
-
-- 先阅读 [跨主线知识依赖审计](40-prerequisite-audit.md)；L05 Tokenizer/语言建模 → L01 Decoder-only → L03 KV Cache，不能跳过 mask 与 Tensor shape。
-- [LLM/Agent 面试题型矩阵](42-interview-coverage.md)：将 SFT、LoRA、推理、RAG、Agent 工具调用与评估映射到课程。
-- [工程全链路对照](41-engineering-audit.md)：共同 GPU/精度/数据训练能力复用 F 系列。
-
-
-## v0.3 · 五仓库比较新增 P0/P1 检查点
-
-- [L04 持久 Agent 执行与 Context Compaction](../notes/20-llm-agent/04-agent/README.md)（P0/P1）。
-- [L07 LLM-as-a-Judge 校准](../notes/20-llm-agent/07-evaluation/README.md)（P0）。
-- [L06 GraphRAG](../notes/20-llm-agent/06-rag/README.md) 与 [L02 合成数据/模型合并](../notes/20-llm-agent/02-training/README.md)（P1）。
-- [五套外部知识库审计报告](43-reference-gap-audit.md)。
