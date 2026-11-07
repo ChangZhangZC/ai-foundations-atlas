@@ -13,6 +13,8 @@
 | L · LLM / Agent | [三级知识地图](roadmaps/20-llm-agent.md) | Tokenizer、Transformer、LoRA、KV Cache、RAG、Agent 与评估 |
 | P · 实践与面试 | [实验/题型检查表](roadmaps/30-practice-interview.md) | Python 手撕、Tensor shape、模型参数、显存、控制与排错 |
 
+[**笔试真题归档**](exam-papers/README.md)：按校招届别保存个人整理的企业笔试复盘；参考答案不等于官方答案，也不自动构成课程验证。
+
 **当前状态**：课程地图 **v0.3 稳定基线**，共 **36 个一级模块**（F12 / E13 / L11）。课程覆盖地图已建立，**正式教学尚未开始**；不把大纲勾选或已有项目经验视为知识已掌握。
 
 - [STATUS.md](STATUS.md)：基线提交、完成/待办状态、笔记与学习进度。
@@ -37,6 +39,7 @@ notes/
   10-embodied/            E01–E13 · 具身智能
   20-llm-agent/           L01–L11 · LLM / Agent
 practice/                 代码与实验
+exam-papers/              按校招届别归档的笔试题目与复盘
 applications/             应用与项目案例
 progress/                 两条路线各自的学习进度
 projects/                 ChatGPT 项目说明与共同上下文
