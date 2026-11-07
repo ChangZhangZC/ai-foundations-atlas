@@ -1,40 +1,11 @@
 # E02 · 模仿学习与 ACT
 
-优先级：P0。本模块先记录清单，不提前生成空白知识点文件。
+**课程定位**：从行为克隆到 ACT：CVAE、Transformer、Action Chunking、Loss、参数与动作执行。配合 LeRobot 追踪策略接口而非仅记公式。
 
-[返回具身知识地图](../../../roadmaps/10-embodied.md)
+[查看 E 具身课程地图](../../../roadmaps/10-embodied.md) · [学习进度](../../../progress/EMBODIED.md) · [自测题型](../../../practice/CHECKLIST.md)
 
-## 1. 模仿学习
+## 知识点与关联入口
 
-- [ ] BC/DAgger/状态分布偏移
-- [ ] 单步与序列策略
-- [ ] 确定性/随机策略
-- [ ] 多模态动作损失
+- [E04 · LeRobot 数据与 Policy](../04-data-teleoperation/README.md)
 
-## 2. ACT 架构
-
-- [ ] CVAE潜变量/reparameterization
-- [ ] Transformer编码解码
-- [ ] Action Chunking与动作token
-- [ ] 多相机和本体状态条件化
-
-## 3. ACT 参数
-
-- [ ] kl_weight/latent_dim
-- [ ] hidden_dim/num_layers/num_heads
-- [ ] chunk_size/n_action_steps
-- [ ] batch_size/lr/num_epochs
-
-## 4. 执行
-
-- [ ] temporal ensembling
-- [ ] chunk overlap/重规划
-- [ ] 动作频率与观测频率
-- [ ] 动作截断/关节映射
-
-## 5. 实现对照
-
-- [ ] 原版ACT与LeRobot ACT配置差异
-- [ ] shape与mask
-- [ ] 训练时latent与推理时latent
-- [ ] 模型失败归因
+课程地图负责完整知识清单；本页只用于模块导论和现有知识链接。已有主笔记不代表已经通过学习验证。
