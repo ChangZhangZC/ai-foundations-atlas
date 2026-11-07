@@ -1,26 +1,11 @@
 # E12 · 强化学习、世界模型（暂缓）
 
-优先级：P2。本模块先记录清单，不提前生成空白知识点文件。
+**课程定位**：保留 MDP、Reward、Policy、Value 等基本术语入口；系统强化学习算法暂缓，不挤占模仿学习和基础课程时间。
 
-[返回具身知识地图](../../../roadmaps/10-embodied.md)
+[查看 E 具身课程地图](../../../roadmaps/10-embodied.md) · [学习进度](../../../progress/EMBODIED.md) · [自测题型](../../../practice/CHECKLIST.md)
 
-## 1. 基础名词
+## 知识点与关联入口
 
-- [ ] MDP/Reward/Policy
-- [ ] Value/Q/Advantage
-- [ ] Bellman方程
-- [ ] On/Off policy
+目前尚无独立知识点主笔记，后续通过课程验证再逐篇建立。
 
-## 2. 后续算法
-
-- [ ] DQN/PPO/SAC/TD3
-- [ ] Offline RL
-- [ ] World Model/Dreamer
-- [ ] RL与BC的比较
-
-## 3. 未来补课
-
-- [ ] 策略梯度推导
-- [ ] RLHF/GRPO与具身RL关联
-- [ ] Sim2Real RL
-- [ ] 复杂长程任务
+完整知识清单只在课程地图维护；此处只索引实际存在的笔记与教学资源。笔记存在不等于个人已掌握。
