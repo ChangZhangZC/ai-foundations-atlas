@@ -1,26 +1,9 @@
 # L11 · RL/对齐进阶（暂缓）
 
-优先级：P2。本模块先记录清单，不提前生成空白知识点文件。
+**课程定位**：保留偏好优化、奖励与 RL/对齐的必要基本概念；复杂策略梯度与 GRPO 等系统强化学习课程暂缓，不挤占当前主线。
 
-[返回LLM/Agent知识地图](../../../roadmaps/20-llm-agent.md)
+[查看 LLM / Agent 课程地图](../../../roadmaps/20-llm-agent.md) · [学习进度](../../../progress/LLM_AGENT.md) · [自测题型](../../../practice/CHECKLIST.md)
 
-## 1. 基础
+## 知识点笔记
 
-- [ ] reward model
-- [ ] PPO/DPO/GRPO区别
-- [ ] KL regularization
-- [ ] Policy/Advantage基础
-
-## 2. 进阶
-
-- [ ] RLVR/Agentic RL
-- [ ] Credit Assignment
-- [ ] Verifier与长程推理
-- [ ] Online/Offline RL联系
-
-## 3. 未来
-
-- [ ] 偏好优化与安全
-- [ ] 训练稳定性和奖励黑客
-- [ ] 机制可解释性SAE
-- [ ] 前沿技术持续更新
+本模块的知识点主笔记将随实际课程验证逐篇建立；待学清单统一由课程地图维护，不在这里复制。
