@@ -1,46 +1,9 @@
 # F10 · GPU、显存与数值性能
 
-**优先级**：P0；此处为阅读导航，未生成空白知识点正文。
+**课程定位**：GPU 计算与存储、参数/激活显存、FP16/BF16/量化、性能测量和分布式训练的基本机制。
 
-[返回共同基础知识地图](../../../roadmaps/00-shared.md)
+[查看 F 共享基础课程地图](../../../roadmaps/00-shared.md) · [学习进度](../../../progress/FOUNDATIONS.md) · [自测题型](../../../practice/CHECKLIST.md)
 
-## 1. 硬件
+## 知识点笔记
 
-- [ ] SM/Tensor Core
-- [ ] FLOPs vs FLOPS
-- [ ] 算力/带宽/PCIe/NVLink
-- [ ] Roofline
-
-## 2. 显存
-
-- [ ] 参数/梯度/优化器/激活
-- [ ] 训练显存粗估
-- [ ] 内存碎片/峰值
-- [ ] KV cache 分配
-
-## 3. 数据类型
-
-- [ ] FP32/TF32/FP16/BF16/FP8
-- [ ] INT8/INT4
-- [ ] 动态范围/下溢
-- [ ] AMP/梯度缩放/量化误差
-
-## 4. 性能
-
-- [ ] nvidia-smi
-- [ ] it/s/samples/s/tokens/s
-- [ ] warmup/同步计时
-- [ ] torch profiler/CPU-IO 瓶颈
-
-## 5. 加速
-
-- [ ] grad checkpointing/compile
-- [ ] DDP/FSDP/ZeRO
-- [ ] TP/PP/EP
-- [ ] FlashAttention/kernel fusion
-
-## 6. 验证
-
-- [ ] 相同输入形状/精度下基准
-- [ ] 显存/延迟/吞吐/质量权衡
-- [ ] 理论峰值和实测利用率
+本模块知识点在通过相应课程验证后分别建立独立主笔记；待学清单只在课程地图维护。本模块目前尚无独立主笔记。
