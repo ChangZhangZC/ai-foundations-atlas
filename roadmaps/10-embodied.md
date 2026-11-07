@@ -207,7 +207,8 @@ E07/E10/E11 按实际场景拓展；E12 系统强化学习暂缓。每课 **2–
 
 - [ ] `lerobot-record` → 数据集校验/可视化 → `lerobot-train` → 策略评估/rollout，理解 CLI 参数如何进入代码。
 - [ ] `PolicyFeature` / `input_features` / `output_features`、配置对象和数据集特征的契约与校验。
-- [ ] Policy 的训练 `forward`/loss 与推理 `select_action`、`predict_action_chunk`；区分模型输出 action chunk 与实际执行的 `n_action_steps`。
+- [ ] Policy 的训练 `forward`/loss 与推理 `select_action`、`predict_action_chunk`；区分 action chunk 与实际执行的 `n_action_steps`。
+- [ ] 依据具体 LeRobot 版本检查推理返回类型（单步 Tensor 或携带预测字段的结构化输出）、action queue、`reset()` 清空 episode 状态；不能假定所有策略的接口完全一致。
 - [ ] 训练/部署 preprocess、normalization、postprocess、action queue、checkpoint 与 policy config 的连接；涉及插件/自定义机器人时验证适配边界。
 - [ ] 将 ROS bag / Kuavo 多相机与 joint/hand state/action 映射到 LeRobot schema；检查相机 key/order、时间同步、动作单位、关节顺序、训练/实机一致性。
 - [ ] 同步推理、异步/远端推理、RTC 与实机控制时钟的职责（详见 E08/E13）。
