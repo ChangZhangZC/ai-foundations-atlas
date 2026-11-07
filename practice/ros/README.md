@@ -47,4 +47,4 @@ rosparam get /use_sim_time
 
 - [ROS Rate 原子笔记](../../notes/10-embodied/13-ros-runtime/ros-rate.md)
 - [ROS 模块导航](../../notes/10-embodied/13-ros-runtime/README.md)
-- [工程覆盖审计](../../roadmaps/41-engineering-audit.md)
+- [相关课程自测](../CHECKLIST.md)
