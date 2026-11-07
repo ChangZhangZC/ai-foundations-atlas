@@ -37,7 +37,7 @@ ai-foundations-atlas/
 ## 使用方式
 
 1. 从上方课程地图选择模块，并进入对应的 `notes/` 模块索引。
-2. 学习概念、公式、Tensor shape、代码及工程联系；需要时参考 [实践与面试清单](roadmaps/30-practice-interview.md)。
+2. 学习概念、公式、Tensor shape、代码及工程联系；需要时参考 [实践与面试清单](practice/CHECKLIST.md)。
 3. 通过练习或实验验证后，将精简知识点归档到 `notes/`，相关完整实现放入 `practice/`。
 4. 在所属方向的 `progress/` 文件记录课程状态、验证证据与下一步。**笔记存在不代表已经学会，课程清单不作为个人掌握度记录。**
 
@@ -46,8 +46,8 @@ ai-foundations-atlas/
 ## 其他入口
 
 - [笔试题目归档](exam-papers/README.md)
-- [实践与面试检查清单](roadmaps/30-practice-interview.md)
-- [参考课程与资料](roadmaps/REFERENCES.md)
+- [实践与面试检查清单](practice/CHECKLIST.md)
+- [参考课程与资料](REFERENCES.md)
 - [ChatGPT 项目配置](projects/README.md)
 
 ## 内容原则
