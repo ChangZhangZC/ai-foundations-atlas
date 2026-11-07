@@ -1,33 +1,11 @@
 # E07 · 仿真与 Sim2Real
 
-优先级：P1。本模块先记录清单，不提前生成空白知识点文件。
+**课程定位**：MuJoCo/Isaac 仿真、机器人状态与接触、任务 reset/step、Domain Randomization、Sim2Real 与仿真评估。
 
-[返回具身知识地图](../../../roadmaps/10-embodied.md)
+[查看 E 具身课程地图](../../../roadmaps/10-embodied.md) · [学习进度](../../../progress/EMBODIED.md) · [自测题型](../../../practice/CHECKLIST.md)
 
-## 1. 仿真平台
+## 知识点与关联入口
 
-- [ ] MuJoCo/Isaac Sim/Isaac Lab
-- [ ] 动力学积分步长
-- [ ] 关节/接触模型
-- [ ] 相机/深度传感器仿真
+当前暂无独立知识点主笔记。后续按课程验证结果逐篇建立。
 
-## 2. 任务构建
-
-- [ ] reset/step/termination
-- [ ] 初始状态随机化
-- [ ] 接触/碰撞/抓取判定
-- [ ] 多seed rollout
-
-## 3. Sim2Real
-
-- [ ] Domain Randomization
-- [ ] System Identification
-- [ ] 视觉、接触和动作域差异
-- [ ] 执行延迟/控制频率
-
-## 4. 工程
-
-- [ ] URDF/MJCF
-- [ ] 资产和场景
-- [ ] 训练评测拆分
-- [ ] 实机迁移前安全验证
+课程地图负责完整知识清单；本页只用于模块导论和现有知识链接。已有主笔记不代表已经通过学习验证。
