@@ -1,57 +1,12 @@
 # E06 · VLA、π0/π0.5 与大模型策略
 
-优先级：P0。本模块先记录清单，不提前生成空白知识点文件。
+**课程定位**：VLM/VLA、视觉语言融合、动作 token/action expert、π0/π0.5 配置与微调。强调模型输入输出到机器人执行的真实数据契约。
 
-[返回具身知识地图](../../../roadmaps/10-embodied.md)
+[查看 E 具身课程地图](../../../roadmaps/10-embodied.md) · [学习进度](../../../progress/EMBODIED.md) · [自测题型](../../../practice/CHECKLIST.md)
 
-## 1. 代表模型
+## 知识点与关联入口
 
-- [ ] RT-1/RT-2
-- [ ] OpenVLA/Octo/RDT
-- [ ] π0/π0.5
-- [ ] VLM vs VLA
-
-## 2. 多模态架构
-
-- [ ] Vision Encoder/LLM backbone
-- [ ] Action Expert/Flow Head
-- [ ] 视觉/语言/状态token
-- [ ] mask和位置编码
-
-## 3. 输出表示
-
-- [ ] 离散action tokens vs连续动作
-- [ ] 关节/末端/灵巧手动作
-- [ ] action_dim/action_horizon
-- [ ] 跨机器人动作标准化
-
-## 4. openpi工程
-
-- [ ] Pi0Config(pi05=True)
-- [ ] TrainConfig和Python dataclass
-- [ ] DataConfig/RepackTransform
-- [ ] norm stats/weight_loader
-
-## 5. 微调
-
-- [ ] LoRA/冻层
-- [ ] 预训练参数与checkpoint
-- [ ] adapter与action expert
-- [ ] 数据协议/资源预算
-
-## 6. 系统
-
-- [ ] 模型响应和推理服务
-- [ ] chunk控制/RTC
-- [ ] 跨任务泛化/OOD
-- [ ] 评估与安全边界
-
-
-## 7. π0/π0.5 的 RTC 与动作表示
-
-- [ ] Flow Head 输出 Chunk `[T,A]` 与执行控制器的 Action Contract
-- [ ] RTC guided/trained，实际延迟与 checkpoint 条件
-- [ ] Joint 与 EE 表示、Relative 与 Delta Action、归一化
+- [LeRobot 数据与 Policy](../04-data-teleoperation/README.md)
 - [RTC 主笔记](../08-deployment/real-time-chunking.md)
-- [Joint/EE 主笔记](../03-control/joint-vs-ee-control.md)
 
+课程地图负责完整知识清单；本页只用于模块导论和现有知识链接。已有主笔记不代表已经通过学习验证。
