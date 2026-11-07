@@ -3,8 +3,6 @@ id: E13-001
 title: ROS Rate 与循环频率
 track: embodied
 priority: P0
-level: L0
-status: todo
 tags: [ros1, timing, control, deployment]
 ---
 
