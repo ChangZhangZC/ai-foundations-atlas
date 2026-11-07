@@ -1,6 +1,5 @@
 # E · 具身智能三级知识地图
-
- > v0.2（2026-11-06）。按机器人数据流组织：传感器/数据→模型表征→动作策略→执行控制→评测。P0优先，P1拓展，P2暂缓。知识地图的勾选均为待学，不等于完成。
+按机器人数据流组织：传感器与数据 → 模型表征 → 动作策略 → 控制执行 → 评测。P0 为重点，P1 为扩展，P2 暂缓；清单不代表已学习，进度以 [E 进度](../progress/EMBODIED.md) 为准。
 
 ## 模块导航
 
@@ -149,11 +148,11 @@ E07/E10/E11 按实际场景拓展；E12 系统强化学习暂缓。每课 **2–
 - [ ] 控制安全与异常拦截
 - [ ] 双臂协调与实时性
 
-#### E03.06 Joint vs EE 动作表示与实际控制
+#### E03.06 Joint / EE 动作表示与实际控制
 
 - [ ] [Joint / End-Effector (EE) 控制主笔记](../notes/10-embodied/03-control/joint-vs-ee-control.md)
 - [ ] Absolute / Relative-to-observation / sequential Delta action 区别和转换
-- [ ] FK/IK 可达性、多解与奇异性；数值 IK、Jacobian、坐标系
+- [ ] FK/IK 可达性、多解与奇异性；数值 IK、Jacobian、world/base/tool 坐标系、四元数 xyzw/wxyz
 - [ ] 位置/速度/力矩 vs Joint/Task Space 的两种不同分类
 - [ ] 轨迹时间参数化、速度/加速度/jerk 限制和闭环跟踪
 - [ ] 控制接口、动作单元/索引、数据归一化和实机安全约束
@@ -262,7 +261,7 @@ E07/E10/E11 按实际场景拓展；E12 系统强化学习暂缓。每课 **2–
 
 #### E05.07 验证
 
-- [ ] 简化1D去噪手撕
+- [ ] 阅读简化 1D 去噪代码与 Loss，预测张量形状和采样行为
 - [ ] [B,T,A]检查
 - [ ] scheduler实验
 - [ ] 配置→Policy→Runner追踪
@@ -397,7 +396,7 @@ E07/E10/E11 按实际场景拓展；E12 系统强化学习暂缓。每课 **2–
 #### E09.01 任务指标
 
 - [ ] rollout success rate
-- [ ] 抓取/放置分阶段统计
+- [ ] 抓取/放置分阶段统计，明确成功判定、有效样本数与条件成功率
 - [ ] 长程成功率
 - [ ] 时间/步数与稳定性
 
@@ -407,6 +406,7 @@ E07/E10/E11 按实际场景拓展；E12 系统强化学习暂缓。每课 **2–
 - [ ] 仿真/真实测试差异
 - [ ] 多个seed/置信区间
 - [ ] 控制变量和消融
+- [ ] train/val/test 按 episode/任务/场景拆分；OOD 泛化和重复试验置信区间
 
 #### E09.03 故障分析
 
@@ -532,20 +532,13 @@ E07/E10/E11 按实际场景拓展；E12 系统强化学习暂缓。每课 **2–
 - [ ] 10 Hz ROS1 Rate 实验与慢处理失速验证
 - [ ] ROS 网络、调度与机器人控制接口系统设计
 
-## 模型源码与配置核查
+## 模型源码与配置阅读入口
 
-|对象|官方源码/文档|需要回答的问题|
+|对象|官方源码/文档|课堂需要回答的问题|
 |---|---|---|
 | ACT | [原版 ACT](https://github.com/tonyzhaozh/act) / [LeRobot ACT Config](https://github.com/huggingface/lerobot/blob/main/src/lerobot/policies/act/configuration_act.py) | chunk_size、n_action_steps、kl_weight、temporal_ensemble_coeff 等版本差异 |
 | DP | [Diffusion Policy YAML](https://github.com/real-stanford/diffusion_policy/blob/main/diffusion_policy/config/train_diffusion_unet_hybrid_workspace.yaml) | horizon、n_obs_steps、n_action_steps、num_inference_steps 的关系 |
 | π0.5 | [openpi Python TrainConfig](https://github.com/Physical-Intelligence/openpi/blob/main/src/openpi/training/config.py) | action_dim/horizon、DataConfig、预训练权重、归一化、冻结参数；并非所有实现都是 YAML |
 | LeRobot | [LeRobot Dataset](https://huggingface.co/docs/lerobot/lerobot-dataset-v3) | features/shape/dtype/fps/stats/episode 和 video 对齐 |
 
-[共同基础](00-shared.md) · [大模型与Agent](20-llm-agent.md) · [实践与面试](30-practice-interview.md)
-
-## v0.3 · 五知识库对照新增链接
-
-- [五套外部资料覆盖审计](43-reference-gap-audit.md) 重点确认 RTC、Joint/EE、控制和 VLA 推理执行缺口。
-- [E03 Joint/EE 主笔记](../notes/10-embodied/03-control/joint-vs-ee-control.md) / [E08 RTC 主笔记](../notes/10-embodied/08-deployment/real-time-chunking.md)。
-- 标准术语是 End-Effector（EE）；EF 一般不作为此处的规范缩写。
-- `E13 ROS Rate` 解释节点循环调度；`E08 RTC` 解释动作 Chunk 的异步生成与连续性约束，两者不可互换。
+[共同基础](00-shared.md) · [大模型与Agent](20-llm-agent.md) · [实践与面试](../practice/CHECKLIST.md)
