@@ -1,54 +1,9 @@
 # L06 · RAG 与检索系统
 
-优先级：P0。本模块先记录清单，不提前生成空白知识点文件。
+**课程定位**：BM25/dense retrieval、chunking、向量索引、reranker、生成引用、检索评估与多跳查询。
 
-[返回LLM/Agent知识地图](../../../roadmaps/20-llm-agent.md)
+[查看 LLM / Agent 课程地图](../../../roadmaps/20-llm-agent.md) · [学习进度](../../../progress/LLM_AGENT.md) · [自测题型](../../../practice/CHECKLIST.md)
 
-## 1. 检索基础
+## 知识点笔记
 
-- [ ] 稀疏检索BM25
-- [ ] Dense embedding
-- [ ] Chunking与Overlap
-- [ ] 向量相似度
-
-## 2. 向量数据库
-
-- [ ] ANN/HNSW/IVF/PQ
-- [ ] metadata过滤
-- [ ] 索引构建/更新
-- [ ] 混合检索
-
-## 3. 重排
-
-- [ ] Bi-Encoder与Cross-Encoder
-- [ ] Reranker
-- [ ] Hard Negative
-- [ ] Recall@k/MRR/nDCG
-
-## 4. 上下文与生成
-
-- [ ] Query Rewrite/Expansion
-- [ ] 引用/溯源
-- [ ] Context Compression
-- [ ] Grounded Generation
-
-## 5. 系统问题
-
-- [ ] 长上下文 vs RAG vs Finetuning
-- [ ] 权限/数据隔离
-- [ ] 检索缓存
-- [ ] 错误归因和幻觉
-
-## 6. 实验
-
-- [ ] 构建小规模本地知识检索
-- [ ] RAG检索与生成分开评测
-- [ ] 负例和拒答测试
-
-
-## 7. 图检索与多跳（P1 补充）
-
-- [ ] GraphRAG 的图构建、实体关系、检索路径。
-- [ ] 何时传统 BM25/Dense Hybrid 足够，何时才需要 GraphRAG。
-- [ ] 多跳推理失败的定位与检索层评价。
-- [Meko1 GraphRAG](https://github.com/Meko1/llm-interview-guide/blob/main/docs/rag/graphrag.md)
+本模块的独立知识点主笔记将随课程验证逐篇建立；本页只负责模块导论与已存在知识点的索引，不复制完整的课程清单。概念已收录不代表个人已掌握。
