@@ -1,40 +1,9 @@
 # F02 · PyTorch 核心能力
 
-**优先级**：P0；此处为阅读导航，未生成空白知识点正文。
+**课程定位**：Tensor 形状与内存语义、自动微分、`nn.Module`、模型训练和调试。重点理解关键语句、梯度流动、参数与数据形状。
 
-[返回共同基础知识地图](../../../roadmaps/00-shared.md)
+[查看 F 共享基础课程地图](../../../roadmaps/00-shared.md) · [学习进度](../../../progress/FOUNDATIONS.md) · [自测题型](../../../practice/CHECKLIST.md)
 
-## 1. Tensor
+## 知识点笔记
 
-- [ ] shape/axis/stride/dtype/device
-- [ ] reshape/view/permute/contiguous
-- [ ] stack/cat/broadcast/einsum
-- [ ] CPU/GPU 转换
-
-## 2. 自动微分
-
-- [ ] 计算图/requires_grad
-- [ ] backward/zero_grad
-- [ ] detach/inplace/叶张量
-- [ ] no_grad/inference_mode
-
-## 3. 模型
-
-- [ ] nn.Module/forward/state_dict
-- [ ] parameter/buffer
-- [ ] Linear/Conv/Embedding
-- [ ] train/eval/Dropout/BN
-
-## 4. 训练
-
-- [ ] Dataset/DataLoader/Sampler/collate_fn
-- [ ] loss/optimizer/scheduler
-- [ ] 梯度累积/裁剪
-- [ ] checkpoint/resume
-
-## 5. 调试
-
-- [ ] 显存 allocated/reserved/OOM
-- [ ] autocast/AMP
-- [ ] torch.profiler
-- [ ] 单 Batch 过拟合与 shape assert
+本模块的独立知识点笔记将在课程核验后逐篇建立；此处只索引已实际存在的笔记，完整待学清单统一以课程地图为准。内容已收录不等于个人学习通过。
