@@ -9,4 +9,7 @@
 - [索引与切片](indexing-and-slicing.md)：Python 切片边界、多维 Tensor 索引与轴保留；关联[广播机制](broadcasting.md)。
 - [广播机制](broadcasting.md)：从右对齐的 Shape 兼容规则与动作归一化；关联[索引与切片](indexing-and-slicing.md)。
 
+- [函数、参数与返回值](functions-and-parameters.md)：`def`、`return`、默认/关键字参数、`*args/**kwargs` 和配置字典展开；关联[类与继承](classes-and-inheritance.md)。
+- [类、实例与继承](classes-and-inheritance.md)：`class`、`self`、`__init__`、`super()`、`nn.Module` 模型调用与 Shape；关联[函数与参数](functions-and-parameters.md)。
+
 以上是现有知识点笔记的索引；完整待学清单以课程地图为准，个人验证状态以进度文件为准。
