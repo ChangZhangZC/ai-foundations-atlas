@@ -159,6 +159,6 @@ images[...,0].shape             # [8,3,3,224]，最后的宽度轴 W 被索引
 3. **相同尺寸不代表相同轴**：尤其别混淆相机视角 `V` 和颜色通道 `C`。
 4. Python 列表复制和 Tensor view 的内存行为不同。
 
-相关：[广播机制](broadcasting.md) · [F02 · PyTorch 核心能力](../02-pytorch/README.md) · [E04 · 数据与 LeRobot](../../10-embodied/04-data-teleoperation/README.md)
+相关：[广播机制](broadcasting.md) · [for 循环与推导式](list-comprehensions.md) · [F02 · PyTorch 核心能力](../02-pytorch/README.md) · [E04 · 数据与 LeRobot](../../10-embodied/04-data-teleoperation/README.md)
 
 参考：[Python Sequence Types](https://docs.python.org/3/library/stdtypes.html#common-sequence-operations) · [PyTorch Tensor Views](https://docs.pytorch.org/docs/stable/tensor_view.html)
