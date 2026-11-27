@@ -12,4 +12,7 @@
 - [函数、参数与返回值](functions-and-parameters.md)：`def`、`return`、默认/关键字参数、`*args/**kwargs` 和配置字典展开；关联[类与继承](classes-and-inheritance.md)。
 - [类、实例与继承](classes-and-inheritance.md)：`class`、`self`、`__init__`、`super()`、`nn.Module` 模型调用与 Shape；关联[函数与参数](functions-and-parameters.md)。
 
+- [模块、包与导入](modules-and-imports.md)：`import`、相对导入、`sys.path`、`PYTHONPATH`、`python -m` 与错误诊断；关联[配置对象](dataclass-and-model-config.md)。
+- [dataclass、类型标注与模型配置](dataclass-and-model-config.md)：配置字段、可变默认值、Config → Policy → Tensor Shape；关联[模块导入](modules-and-imports.md)。
+
 以上是现有知识点笔记的索引；完整待学清单以课程地图为准，个人验证状态以进度文件为准。
