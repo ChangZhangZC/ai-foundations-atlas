@@ -15,4 +15,8 @@
 - [模块、包与导入](modules-and-imports.md)：`import`、相对导入、`sys.path`、`PYTHONPATH`、`python -m` 与错误诊断；关联[配置对象](dataclass-and-model-config.md)。
 - [dataclass、类型标注与模型配置](dataclass-and-model-config.md)：配置字段、可变默认值、Config → Policy → Tensor Shape；关联[模块导入](modules-and-imports.md)。
 
+- [for 循环与推导式](list-comprehensions.md)：过滤、列表/字典构建、视角字典的 Tensor Shape；关联[枚举与配对](enumerate-and-zip.md)。
+- [enumerate 与 zip](enumerate-and-zip.md)：序号、解包、按位置配对及 `zip(strict=True)` 的数据契约；关联[推导式](list-comprehensions.md)。
+- [迭代器、生成器与 yield](iterators-and-generators.md)：`iter`/`next`、生成器耗尽、重新创建和 DataLoader 迭代；关联[枚举与配对](enumerate-and-zip.md)。
+
 以上是现有知识点笔记的索引；完整待学清单以课程地图为准，个人验证状态以进度文件为准。
