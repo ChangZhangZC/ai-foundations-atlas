@@ -88,6 +88,7 @@ print(action.shape)         # torch.Size([4, 14])
 ## 相关知识
 
 - [函数、参数与返回值](functions-and-parameters.md)
+- [dataclass、类型标注与模型配置](dataclass-and-model-config.md)
 - [广播机制与 Tensor Shape](broadcasting.md)
 - [F02 · PyTorch 核心能力](../02-pytorch/README.md)
 - [E02 · 模仿学习与 ACT](../../10-embodied/02-policy/README.md)
