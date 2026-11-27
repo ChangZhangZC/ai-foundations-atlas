@@ -77,6 +77,7 @@ make_policy(**config)  # 等价于按名称传两个关键字参数
 - [类、实例与继承](classes-and-inheritance.md)
 - [dataclass、类型标注与模型配置](dataclass-and-model-config.md)
 - [索引与切片](indexing-and-slicing.md)
+- [迭代器、生成器与 yield](iterators-and-generators.md)
 - [F02 · PyTorch 核心能力](../02-pytorch/README.md)
 
 ## 来源
